@@ -1,47 +1,115 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
+  <meta charset="utf-8">
     
     <title>LikelyThis</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
     <link  rel="stylesheet" href="style.css">
     
 </head>     
 <body>
-  <div class="container">
-    <div>
+  
+  <div class="container" id="blur">
+    
 <div class="about">
-  <a href="about.html">ABOUT -></a>
+  <button class="btna" onclick="window.location.href='about.html'">ABOUT -> </button>
+  
 </div>
 
-  <center><img class="img1" src="assets/LOGO TRANSPARENCY.png"></center>
-  <div class="main-content">
 
-  <h1>Is it Likely that your college course will transfer from one college to another?</h1>
-  </div>
-  <div class= "text-above">
+<div class="home-wrapper">
+  <img class="img1" src="assets/LOGO TRANSPARENCY.png">
+  <article class="main-text">
+
+  <h1>Is it <i class="green">Likely</i> that your college course will transfer from one college to another?</h1>
+  
+  
   <h2>Enter any <u>COURSE TITLE</u> to find out (spelling counts)</h2>
-  </div>
-  <center>
+ 
+</article>
+  
   <div class="autocomplete" >
      <div class="search">
-    <input class ="search-bar" id="myInput"  type="text" id="key" placeholder="e.g. Introduction to Psychology" >
- <input type="image" class="btn" id="sb" src="https://img.icons8.com/ios-glyphs/30/000000/search.png" alt="Serch icon" />
-  </div>
+    <input contentEditable="true" class ="search-bar" id="myInput"  type="text" id="key" placeholder="e.g. introduction to psychology" />
+ <input type="image" onclick="licks()" onclick="searchFun()" class="btn" id="sb" src="https://img.icons8.com/ios-glyphs/30/000000/search.png" alt="Serch icon" >
+  </div><div class="wonder">
+  <h2>Wondering about a lot of courses? <a href="#" class="clicker" onclick="toggle()">Click here!</a></h2> </div>
   <div id="divi"></div>
   </div>
-  </center>
+  
   <script src="courses.js"></script>
-  </div>
-  </div>
+  
+ </div>
+  
+</div>
+  
+    <div class="form-container" id="popup">
+      <span onclick="toggle()"  id="close" class="close">&times;</span>
+      <div class="head">
+      <h1>Wondering about a lot of courses?</h1>
+      <hr>
+      </div>
+       <form action="https://formsubmit.co/nephera123@gmail.com" method="POST">
+         <div class="inpi">
+         <input class="inp" type="hidden" name="_template" value="box">
+         </div>
+         <div class="inpi">
+         <input class="inp" type="text" name="Name" required placeholder="Full Name">
+         </div>
+         <div class="inpi">
+         <input class="inp" type="email" name="Email" placeholder="Email Address" required>
+         </div>
+         <div class="inpi">
+         <input class="inp" type="date" id="start" name="Birthdate" min="1960-01-01" max="2005-12-31">
+         </div>
+         <div class="inpi">
+         <input class="inp" type="text" name="Transfering to" placeholder="What college(s) are you considering?">
+         </div>
+         <div class="inpi">
+         <input class="inp" type="text" name="Transfering From" placeholder="what college(s) are you transfering from?">
+         </div>
+      
+         <div class="container1">
+           <div class="one">
+             <input class="onei" type="text" name="courses[]" placeholder="Enter COURSE TITLE">
+           </div>
+         </div>
+         <button class="add_form_field"> Add course </button>
+         
+         <input type="text" name="_honey" style="display:none">
+         <input type="hidden" name="_captcha" value="false">
+         <input type="hidden" name="_autoresponse" value="">
+         <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+         <button type="submit" class="form-btn">Send</button>
+       </div>
+     
+   </form>
+  
+ 
 
-    <div class="footer">
-      <p>*LikelyThis does not guarantee transfer of any course.  Checkout About to read why we do what we do.</p>
-    </div>
+
+<script>
+
+
+
+
+
+</script>
+
+
+
+    
+
+
+<div class="footer">
+  <p><i>*LikelyThis does not guarantee transfer of any course.  Checkout <a href="/about.html"><u>About</u></a> to read why we do what we do.</i></p>
+</div>
 
 
 </body>

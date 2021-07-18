@@ -100,25 +100,82 @@ const courses = ["Composition I", "Rhetoric I", "College Writing I", "College Co
 
 
 
+
   var but = document.getElementById('sb');
+  
 var courseInput = document.getElementById('myInput');
 var divi = document.getElementById('divi');
 
-function searchFun() {
-  console.log(courseInput.value);
-  if(courses.includes(courseInput.value)) { 
-    
-divi.innerHTML = `${courseInput.value} is Likely`;
-document.body.appendChild(divi);
-    //document.write(`${courseInput.value} is Likely`);
-  }else{
-    divi.innerHTML = `${courseInput.value} is Unlikely`;
-document.body.appendChild(divi);
-    //document.write(`${courseInput.value} is Unlikely`);
-  }
+var clicks = 0;
+
+function toggle() {
+  var blur = document.getElementById('blur');
+  blur.classList.toggle('active'); 
+  var popup = document.getElementById('popup');
+  popup.classList.toggle('active');
 }
 
 
 
+
+
+
+
+
+function searchFun() {
+ 
+  if(courses.includes(courseInput.value)) { 
+    
+divi.innerHTML = `${courseInput.value} is <span class="green">Likely</span>  to Transfer`;
+document.body.appendChild(divi);
+    //document.write(`${courseInput.value} is Likely to Transfer`);
+  }else{
+    divi.innerHTML = `${courseInput.value} is <span class="red">Unlikely</span>  to Transfer`;
+document.body.appendChild(divi);
+    //document.write(`${courseInput.value} is Unlikely to Transfer`);
+  }
+}
+
 but.addEventListener('click', searchFun);
 autocomplete(document.getElementById("myInput"), courses);
+console.log(but)
+
+$(document).ready(function() {
+  var max_fields = 10;
+  var wrapper = $(".container1");
+  var add_button = $(".add_form_field");
+
+  var x = 1;
+  $(add_button).click(function(e) {
+      e.preventDefault();
+      if (x < max_fields) {
+          x++;
+          $(wrapper).append('<div class="new"><input class="newi" name="courses[]" name="transfer" placeholder="Enter COURSE TITLE" name="mytext[]"/><span href="#" class="delete">&times</span></div>'); //add input box
+      } else {
+          alert('You Reached the limits')
+      }
+  });
+
+  $(wrapper).on("click", ".delete", function(e) {
+      e.preventDefault();
+      $(this).parent('div').remove();
+      x--;
+  })
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
