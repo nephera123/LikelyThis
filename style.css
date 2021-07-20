@@ -1,30 +1,32 @@
 /*index CSS */
+
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
-
-
 * {
-    
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
 
-  }
-  body{
-    text-align: center;
-    background-color:#E5FCF5;
-    font-family: 'Rajdhani', sans-serif;
-    height: 100%;
-    width: 100%;
-  }
-
+body {
+  text-align: center;
+  background-color: #E5FCF5;
+  font-family: 'Rajdhani', sans-serif;
+  height: 100%;
+  width: 100%;
+  animation:  slideInFromBottom 1s cubic-bezier(.38, .05, .83, .67);
+}
+a{
+  color: #E16036;
+}
 /*search field*/
+
 .home-wrapper {
   width: auto;
   height: auto;
- 
-  
 }
-
+.foot{
+  font-size: 20px;
+}
 .img1 {
   margin-right: 30px;
   width: 70%;
@@ -32,82 +34,72 @@
 }
 
 .main-text h2 {
-  padding: 30px 10px ;
-    font-size: 25px;
-    
-  }
-  .main-text h1 {
-    left: 100px;
-   
-    font-size: 25px;
-    
-  }
-  .main-text{
-    padding-top: 50px;
-    width: 100%;
-  }
-  .search-bar {
-    
-    margin: 10px -15px 50px 10px;
-    top: 70px;
-    width: 270px;
-    height: 40px;
-    border-radius: 15px;
-    border: 2px  #DC602E solid;
-    position: relative;
-    background-color: transparent;
-    padding: 0px 10px 0px 10px;
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 17px;
-    text-transform: capitalize;
-    }
-
-
-.search-bar::placeholder { 
-text-transform: uppercase;
-color: gray;
-font-size: 15px;
+  padding: 30px 10px;
+  font-size: 25px;
 }
 
+.main-text h1 {
+  left: 100px;
+  font-size: 25px;
+}
 
+.main-text {
+  padding-top: 50px;
+  width: 100%;
+}
+
+.search-bar {
+  margin: 10px -15px 50px 10px;
+  top: 70px;
+  width: 270px;
+  height: 40px;
+  border-radius: 15px;
+  border: 2px #DC602E solid;
+  position: relative;
+  background-color: transparent;
+  padding: 0px 10px 0px 10px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 17px;
+  text-transform: capitalize;
+}
+
+.search-bar::placeholder {
+  text-transform: uppercase;
+  color: gray;
+  font-size: 15px;
+}
 
 .btn {
-position: relative;
-height: 20px;
-width: 20px;
-top: 75px;
-left: -25px;
-
-
+  position: relative;
+  height: 20px;
+  width: 20px;
+  top: 75px;
+  left: -25px;
 }
-
-
 
 .footer {
-width: 100%;
-position: absolute;
-
-margin: 200px 0px 10px 0px;
+  width: 100%;
+  position: absolute;
+  margin: 200px 0px 10px 0px;
+  font-size: 17px;
+ 
+  
 }
 
-
-
-.search{
+.search {
   width: 100%;
-  position: relative
-  ;
+  position: relative;
 }
 
 input.search-bar:focus {
   outline-width: 0;
-} 
-
+}
 
 .autocomplete-items div {
   padding: 10px;
   cursor: pointer;
-  background-color: #fff; 
-  border-bottom: 1px solid #d4d4d4; 
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
 }
 
 .autocomplete {
@@ -116,11 +108,11 @@ input.search-bar:focus {
 }
 
 .autocomplete-items div:hover {
-  background-color: #e9e9e9; 
+  background-color: #e9e9e9;
 }
 
 .autocomplete-items {
-  position:absolute;
+  position: absolute;
   border: 1px solid #d4d4d4;
   border-bottom: none;
   border-top: none;
@@ -131,33 +123,31 @@ input.search-bar:focus {
   border-radius: 15px;
   text-transform: uppercase;
 }
-.green{
+
+.green {
   color: green;
   font-style: italic;
 }
 
-.red{
+.red {
   color: red;
   font-style: italic;
 }
 
-#divi{
+#divi {
   position: relative;
-  
   text-align: center;
   text-transform: uppercase;
   font-size: 20px;
-  
+  animation: 1s ease-out 0s 1 FadeIn;
 }
 
-
-.about{
+.about {
   text-align: right;
   padding: 2px;
-  
-
 }
-.btna{
+
+.btna {
   font-size: 16px;
   background: #474448;
   background-size: inherit;
@@ -169,1049 +159,968 @@ input.search-bar:focus {
   border-width: 1.5px;
   font-family: 'Rajdhani', sans-serif;
 }
-.btna:hover{
+
+.btna:hover {
   color: #E16036;
   text-decoration: none;
-  
 }
+
 .wonder {
   position: inherit;
   bottom: 30px;
-  font-size: 12px ;
+  font-size: 12px;
 }
 
-#popup{
-  width:300px;
-  box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+#popup {
+  width: 300px;
+  box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);
   padding: 2rem;
-  background-color:#fff;
+  background-color: #fff;
   margin-top: -450px;
   margin-left: 10px;
   position: relative;
   transition: 0.5s;
-  
   z-index: 9999;
   visibility: hidden;
 }
-#popup.active{
+
+#popup.active {
   visibility: visible;
-  
   transition: 0.5s;
-  animation: fadeAndScale2 1s cubic-bezier(.38,.05,.83,.67);
+  animation: fadeAndScale2 1s cubic-bezier(.38, .05, .83, .67);
   transform-origin: bottom;
-  
 }
 
-.new{
-  
+.new {
   width: 180px;
   position: relative;
   border-radius: 5px;
   left: 2px;
-  
 }
-.newi{
+
+.newi {
   width: 100%;
-  padding: 5px ;
-position: relative;
+  padding: 5px;
+  position: relative;
   border-radius: 5px;
-  
- 
 }
-.one{
+
+.one {
   position: relative;
   padding: 10px;
   margin-bottom: 10px;
   right: 8.5px;
 }
 
-.onei{
-  width:100%;
+.onei {
+  width: 100%;
   padding: 5px;
-right: 8.5px;
+  right: 8.5px;
   border-radius: 5px;
 }
 
-.delete{
-  position:relative;
- left: 165px;
+.delete {
+  position: relative;
+  left: 165px;
   top: -23px;
   color: #000;
   cursor: pointer;
-  font-size: 20px ;
-  }
+  font-size: 20px;
+}
 
-  .inp{
+.inp {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.inpi {
+  padding: 10px;
+  position: relative;
+  text-transform: uppercase;
+  right: 8.5px;
+}
+
+input.inp:focus {
+  outline-width: 0;
+}
+
+input.newi:focus {
+  outline-width: 0;
+}
+
+input.onei:focus {
+  outline-width: 0;
+}
+
+.close {
+  margin-left: 260px;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.head {
+  margin-top: 10px;
+}
+
+.container#blur.active {
+  filter: blur(5px);
+  pointer-events: none;
+  user-select: none;
+}
+
+.add_form_field:hover {
+  border-color: var(--font-hover-color);
+  color: var(--font-hover-color);
+}
+
+.add_form_field {
+  background: 0 0 #fff;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  color: var(--font-color);
+  font-size: 1em;
+  padding: 1px 110px;
+  margin: 10px;
+  margin-top: -40px;
+  margin-left: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.form-btn {
+  background: 0 0 #fff;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  color: var(--font-color);
+  font-size: 1em;
+  padding: 10px 122px;
+  margin-left: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.form-btn:hover {
+  border-color: var(--font-hover-color);
+  color: var(--font-hover-color);
+}
+
+@media only screen and (min-width: 280px) {
+  .img1 {
+    margin-left: -10px;
+    width: 80%;
+    padding-top: 20px;
+  }
+  #popup {
+    width: 200px;
+    margin-top: -570px;
+    margin-left: 8px;
+    align-items: center;
+    position: absolute;
+  }
+  .form-btn {
+    background: 0 0 #fff;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    color: var(--font-color);
+    font-size: 1em;
+    padding: 10px 80px;
+    margin-left: -5px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .add_form_field {
+    background: 0 0 #fff;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    color: var(--font-color);
+    font-size: 1em;
+    padding: 8px 25px;
+    margin: 10px;
+    margin-top: -40px;
+    margin-left: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .inp {
     width: 100%;
     padding: 5px;
-
     border-radius: 5px;
+    text-transform: uppercase;
   }
-  .inpi{
-  padding: 10px;
-position: relative;
-text-transform: uppercase;
-right: 8.5px;
+  .newi {
+    text-transform: uppercase;
   }
-  
-  input.inp:focus {
-    outline-width: 0;
-  } 
-  input.newi:focus {
-    outline-width: 0;
-  } 
-  input.onei:focus {
-    outline-width: 0;
-  } 
-
-  .close {
-    margin-left: 260px;
-    cursor: pointer;
-    font-size: 30px;
+  .onei {
+    text-transform: uppercase;
   }
-  
-  .head {
-    margin-top: 10px;
-  }
-  
-  .container#blur.active{
-    filter: blur(5px);
-    pointer-events: none;
-    user-select: none;
-  }
-  .add_form_field:hover{
-    border-color:var(--font-hover-color);
-    color:var(--font-hover-color);
-  
-  }
-  .add_form_field{
-    background: 0 0 #fff;
-    border:1px solid #aaa;
-    border-radius:3px;
-    color:var(--font-color);
-    font-size:1em;
-    padding:1px 110px  ;
-    margin: 10px;
-   margin-top: -40px;
-   margin-left: 10px;
-    text-transform:uppercase;
-    cursor: pointer;
-  }
-
-  .form-btn{
-    background: 0 0 #fff;
-    border:1px solid #aaa;
-    border-radius:3px;
-    color:var(--font-color);
-    font-size:1em;
-    padding:10px 122px;
-    margin-left: 10px;
-    text-transform:uppercase;
-    cursor: pointer;
-  }
-  .form-btn:hover{
-    border-color:var(--font-hover-color);
-    color:var(--font-hover-color);
-    
-  }
-  @media only screen and (min-width: 280px) {
-    .img1 {
-      margin-left: -10px;
-      width: 80%;
-      padding-top: 20px;
-    }
-   
-    #popup{
-      width:200px;
-      margin-top: -570px;
-      margin-left: 8px;
-      align-items: center;
-      position: absolute;
-    }
-    .form-btn{
-      background: 0 0 #fff;
-      border:1px solid #aaa;
-      border-radius:3px;
-      color:var(--font-color);
-      font-size:1em;
-      padding:10px 80px;
-      margin-left: -5px;
-      text-transform:uppercase;
-      cursor: pointer;
-    }
-    .add_form_field{
-      background: 0 0 #fff;
-      border:1px solid #aaa;
-      border-radius:3px;
-      color:var(--font-color);
-      font-size:1em;
-      padding:8px 25px  ;
-      margin: 10px;
-     margin-top: -40px;
-     margin-left: 5px;
-      text-transform:uppercase;
-      cursor: pointer;
-    }
-    .inp{
-      width: 100%;
-      padding: 5px;
-      border-radius: 5px;
-      text-transform: uppercase;
-    }
-    .newi{
-      text-transform: uppercase;
-    }
-    .onei{
-      text-transform: uppercase;
-    }
-    .inpi{
+  .inpi {
     padding: 10px;
-  position: relative;
-  
-  right: 8.5px;
-    }
-    .delete{
-      position:relative;
-     left: 115px;
-      top: -24px;
-      color: #000;
-      cursor: pointer;
-      font-size: 20px;
-      }
-      .close {
-        margin-left: 190px;
-        cursor: pointer;
-        font-size: 30px;
-      }
-      .search-bar {
-  
-        margin: 10px -15px 50px 10px;
-        top: 10px;
-        width: 236.7px;
-        font-size: 15px;
-        }
-        .btn {
-          top: 15px;
-          left: -20px;
-          }
-          .autocomplete-items {
-            top: 65px;
-            left: 20px;
-            width: 236.7px;
-          }
-          .footer{
-            margin: 90px 0px 10px 0px;
-            font-size: 15px;
-          }
+    position: relative;
+    right: 8.5px;
   }
-  @media only screen and (min-width: 320px){
-  #popup{
-    margin-top:-550px;
-    margin-left: 30px;
-  }
-  .main-text h1{
-    font-size: 30px;
-  }
-  .main-text h2{
+  .delete {
+    position: relative;
+    left: 115px;
+    top: -24px;
+    color: #000;
+    cursor: pointer;
     font-size: 20px;
   }
-  .autocomplete-items{
+  .close {
+    margin-left: 190px;
+    cursor: pointer;
+    font-size: 30px;
+  }
+  .search-bar {
+    margin: 10px -15px 50px 10px;
+    top: 10px;
+    width: 236.7px;
+    font-size: 15px;
+  }
+  .btn {
+    top: 15px;
+    left: -20px;
+  }
+  .autocomplete-items {
     top: 65px;
-  left: 35px;
-  width: 250px;
+    left: 20px;
+    width: 236.7px;
   }
+  .footer {
+    margin: 90px 0px 10px 0px;
+    font-size: 15px;
   }
-  @media only screen and (min-width: 360px){
+}
+
+@media only screen and (min-width: 320px) {
+  #popup {
+    margin-top: -550px;
+    margin-left: 30px;
+  }
+  .main-text h1 {
+    font-size: 30px;
+  }
+  .main-text h2 {
+    font-size: 20px;
+  }
+  .autocomplete-items {
+    top: 65px;
+    left: 35px;
+    width: 250px;
+  }
+}
+
+@media only screen and (min-width: 360px) {
   #popup {
     margin-left: 23px;
     width: 250px;
   }
-  .newi{
-    width:230px;
+  .newi {
+    width: 230px;
   }
-  .delete{
+  .delete {
     left: 163px;
   }
-  .close{
+  .close {
     margin-left: 240px;
   }
+}
+
+@media only screen and (min-width: 375px) {
+  #popup {
+    width: 270px;
+    margin-top: -470px;
+    margin-left: 20px;
+    align-items: center;
+    position: absolute;
   }
-  @media only screen and (min-width: 375px) {
-    #popup{
-      width:270px;
-      margin-top: -470px;
-      margin-left: 20px;
-      align-items: center;
-      position: absolute;
-    }
-    .inp{
-      text-transform: uppercase;
-      font-size: 10px;
-    }
-    .newi{
-      text-transform: uppercase;
-      font-size: 10px;
-      width: 250px;
-    }
-    .delete{
-      left: 190px;
-    }
-    .close{
-      margin-left: 260px;
-    }
-    .onei{
-      text-transform: uppercase;
-      font-size: 10px;
-    }
-    .footer{
-      margin: 190px 0px 10px 0px;
-    }
+  .inp {
+    text-transform: uppercase;
+    font-size: 10px;
   }
+  .newi {
+    text-transform: uppercase;
+    font-size: 10px;
+    width: 250px;
+  }
+  .delete {
+    left: 190px;
+  }
+  .close {
+    margin-left: 260px;
+  }
+  .onei {
+    text-transform: uppercase;
+    font-size: 10px;
+  }
+  .footer {
+    margin: 190px 0px 10px 0px;
+  }
+}
 
 @media only screen and (min-width: 411px) {
-  #popup{
-    width:300px;
-  
+  #popup {
+    width: 300px;
     margin-top: -500px;
-    
     margin-left: 25px;
-  
   }
   .autocomplete-items {
-   
-    
     top: 65px;
     left: 38px;
     width: 250px;
-    
   }
-  .main-text h1{
-font-size: 35px;
+  .main-text h1 {
+    font-size: 35px;
   }
   .main-text h2 {
-    font-size:20px ;
+    font-size: 20px;
   }
   .wonder {
-  font-size: 12px;
+    font-size: 12px;
   }
   .close {
     margin-left: 280px;
-
   }
-
-  .new{
-
-    width:94%;
-
+  .new {
+    width: 94%;
     position: relative;
     border-radius: 5px;
     left: 1px;
-    
   }
-  .newi{
+  .newi {
     width: 100%;
-    padding: 10px ;
-  position: relative;
-    border-radius: 5px;
-    
-   
-  }
-  .one{
+    padding: 10px;
     position: relative;
-    
+    border-radius: 5px;
+  }
+  .one {
+    position: relative;
     margin-bottom: 20px;
     right: 8.5px;
-    
   }
-  
-  .onei{
-    width:100%;
+  .onei {
+    width: 100%;
     padding: 10px;
-  right: 8.5px;
+    right: 8.5px;
     border-radius: 5px;
   }
-  .inp{
+  .inp {
     width: 100%;
     padding: 10px;
     text-transform: uppercase;
     font-size: 15px;
-    
     border-radius: 5px;
   }
-  .inpi{
-  padding: 10px;
-position: relative;
-text-transform: uppercase;
-right: 8.5px;
-
-
+  .inpi {
+    padding: 10px;
+    position: relative;
+    text-transform: uppercase;
+    right: 8.5px;
   }
-  .delete{
+  .delete {
     left: 175px;
-     top: -40px;
-     font-size: 30px;
-     }
-.footer{
-  margin: 150px 0px 10px 0px;
-}
-    }
-@media only screen and (min-width: 480px){
-  #popup{
-    width:300px;
-  
-    margin-top: -500px;
-    
-    margin-left: 60px;
-  
+    top: -40px;
+    font-size: 30px;
   }
-  .onei{
+  .footer {
+    margin: 150px 0px 10px 0px;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  #popup {
+    width: 300px;
+    margin-top: -500px;
+    margin-left: 60px;
+  }
+  .onei {
     font-size: 15px;
   }
 }
 
-    @media only screen and (min-width: 540px) {
-      .autocomplete-items {
-        top: 67px;
-        left: 80px;
-        width: 250px;
-      }
-      .wonder{
-        font-size: 13px;
-      }
-      
-      .autocomplete-items {
-        width: 260px;
-        font-size: 25px;
-        left: 45px;
-      }
-      #popup{
-          
-        
-        margin-top: -550px;
-        
-        
-       
-        width:400px;
-      margin-left: 38px;
-      
-        }
-        .new{
+@media only screen and (min-width: 540px) {
+  .autocomplete-items {
+    top: 67px;
+    left: 80px;
+    width: 250px;
+  }
+  .wonder {
+    font-size: 13px;
+  }
+  .autocomplete-items {
+    width: 260px;
+    font-size: 25px;
+    left: 45px;
+  }
+  #popup {
+    margin-top: -550px;
+    width: 400px;
+    margin-left: 38px;
+  }
+  .new {
+    width: 95%;
+    position: relative;
+    border-radius: 5px;
+    left: 1px;
+  }
+  .newi {
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+  .one {
+    position: relative;
+    margin-bottom: 20px;
+    right: 8.5px;
+  }
+  .onei {
+    width: 100%;
+    padding: 10px;
+    right: 8.5px;
+    border-radius: 5px;
+  }
+  .inp {
+    width: 100%;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+  .inpi {
+    padding: 10px;
+    position: relative;
+    text-transform: uppercase;
+    right: 8.5px;
+  }
+  .delete {
+    left: 224px;
+    top: -35px;
+    font-size: 30px;
+  }
+  .close {
+    margin-left: 380px;
+  }
+  .add_form_field {
+    background: 0 0 #fff;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    color: var(--font-color);
+    font-size: 1em;
+    padding: 10px 70px;
+    margin: -40px;
+    margin-bottom: 20px;
+    margin-right: -50px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .form-btn {
+    background: 0 0 #fff;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    color: var(--font-color);
+    font-size: 1em;
+    padding: 10px 120px;
+    margin-left: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .footer {
+    margin: 170px 0px 10px 0px;
+  }
+  .main-text h1 {
+    font-size: 35px;
+  }
+  .main-text h2 {
+    font-size: 20px;
+  }
+  #divi {
+    bottom: 10px;
+    font-size: 25px;
+  }
+}
 
-          width:95%;
+@media only screen and (min-width: 600px) {
+  #popup {
+    width: 400px;
+    margin-left: 70px;
+  }
+  .newi {
+    font-size: 15px;
+    left: 4px;
+  }
+  input#start.inp {
+    color: gray;
+  }
+  #divi {
+    bottom: 0px;
+  }
+  .footer {
+    margin: 340px 0px 10px 0px;
+  }
+}
 
-          position: relative;
-          border-radius: 5px;
-          left: 1px;
-          
-        }
-        .newi{
-          width: 100%;
-          padding: 10px ;
-        position: relative;
-          border-radius: 5px;
-          font-size: 15px;
-         
-        }
-        .one{
-          position: relative;
-          
-          margin-bottom: 20px;
-          right: 8.5px;
-          
-        }
-        
-        .onei{
-          width:100%;
-          padding: 10px;
-        right: 8.5px;
-          border-radius: 5px;
-        }
-        .inp{
-          width: 100%;
-          padding: 10px;
-          text-transform: uppercase;
-          font-size: 15px;
-          
-          border-radius: 5px;
-        }
-        .inpi{
-        padding: 10px;
-      position: relative;
-      text-transform: uppercase;
-      right: 8.5px;
-      
-      
-        }
-        .delete{
-          left: 224px;
-           top: -35px;
-           font-size: 30px;
-           }
-           .close {
-             margin-left: 380px;
-           }
-           .add_form_field{
-            background: 0 0 #fff;
-            border:1px solid #aaa;
-            border-radius:3px;
-            color:var(--font-color);
-            font-size:1em;
-            padding:10px 70px  ;
-            
-           margin: -40px ;
-           margin-bottom: 20px;
-           margin-right: -50px;
-            text-transform:uppercase;
-            cursor: pointer;
-          }
-        
-          .form-btn{
-            background: 0 0 #fff;
-            border:1px solid #aaa;
-            border-radius:3px;
-            color:var(--font-color);
-            font-size:1em;
-            padding:10px 120px;
-            margin-left: 5px;
-            text-transform:uppercase;
-            cursor: pointer;
-          }
-        .footer{
-          margin: 170px 0px 10px 0px;
+@media only screen and (min-width: 768px) {
+  #popup {
+    width: 400px;
+    margin-left: 155px;
+  }
+  .form-btn {
+    padding: 10px 100px;
+  }
+  .delete {
+    left: 230px;
+    top: -35px;
+    font-size: 30px;
+  }
+  .close {
+    margin-left: 350px;
+  }
+  .search-bar {
+    margin: 10px -15px 50px 10px;
+    top: 10px;
+    width: 400px;
+    font-size: 25px;
+  }
+  .btn {
+    top: 12px;
+    left: -30px;
+  }
+  .autocomplete-items {
+    width: 400px;
+    font-size: 25px;
+    left: 20px;
+  }
+  #divi {
+    font-size: 25px;
+  }
+  .main-text h1 {
+    font-size: 40px;
+  }
+  .btna {
+    font-size: 25px;
+  }
+  .footer {
+    margin: 370px 0px 10px 0px;
+    font-size: 20px;
+  }
+}
 
-        }
-        .main-text h1 {
-          font-size: 35px;
-        }
-        .main-text h2 {
-          font-size: 20px;
-        }
-       #divi {
-         bottom: 10px;
-         font-size: 25px;
-       }
-    }   
-    @media only screen and (min-width: 600px){
-      #popup{
-        width:400px;
-        margin-left: 70px;
-      }
-      .newi{
-        font-size: 15px;
-        left: 4px;
-      }
-      input#start.inp{
-        color: gray;
-      }
-      #divi{
-        bottom: 0px;
-      }
-      .footer{
-        margin: 340px 0px 10px 0px;
-      }
-    }
-    @media only screen and (min-width: 768px) {
-      #popup{
-        width:400px;
-        margin-left: 155px;
-      }
-      .form-btn{
-        padding:10px 100px;
-      }
-     
-      .delete{
-       left: 230px;
-        top: -35px;
-        font-size: 30px;
-        }
-        .close {
-          margin-left: 350px;
-        }
-        .search-bar {
-    
-          margin: 10px -15px 50px 10px;
-          top: 10px;
-          width: 400px;
-          font-size: 25px;
-          }
-          .btn {
-            top: 12px;
-            left: -30px;
-            }
-            .autocomplete-items {
-              width: 400px;
-              font-size: 25px;
-              left: 20px;
-            }
-          
-          #divi{
-            
-            font-size: 25px;
-            
-          }
-          .main-text h1{
-            font-size: 40px;
-          }
-          .btna{
-            font-size: 25px;
-          }
-          .footer {
-            margin: 370px 0px 10px 0px;
-           font-size: 20px;
-         
-            }
-          }
-    @media only screen and (min-width: 1024px){
-      .img1 {
-        margin-right: 30px;
-        width: 70%;
-        padding-top: 20px;
-      }
-      
-      .main-text h2 {
-        padding: 30px 10px ;
-          font-size: 40px;
-          
-        }
-        
-        .main-text h1 {
-          left: 100px;
-         
-          font-size: 70px;
-          
-        }
-        .main-text{
-          padding-top: 50px;
-          width: 100%;
-        }
-      
-      .form-btn{
-        padding:10px 100px;
-      }
-     
-      .delete{
-       left: 215px;
-        top: -30px;
-        font-size: 30px;
-        }
-        .close {
-          margin-left: 350px;
-        }
-        .search-bar {
-          padding: 15px 10px 10px 15px;
-          margin: 10px -15px 50px 10px;
-          top: 10px;
-          width: 700px;
-          border-width: 3px;
-          border-radius: 25px;
-          border: 4px  #DC602E solid;
-          font-size: 35px;
-          }
-          .btn {
-            position: relative;
-            height: 30px;
-            width: 30px;
-            top: 13px;
-            left: -35px;
-            
-            }
-            .autocomplete-items {
-              width: 700px;
-              font-size: 45px;
-              top: 90px;
-              left: 20px;
-            }
-          
-          #divi{
-            bottom: -20px;
-            font-size: 45px;
-            
-          }
-          .footer {
-            margin: 360px 0px 10px 0px;
-           font-size: 35px;
-         
-            }
-          
-        .search-bar::placeholder { 
-        text-transform: uppercase;
-        color: gray;
-        font-size: 30px;
-        }
-        #popup{
-          padding: 7rem;
-          
-          margin-top: -850px ;
-          
-         
-          transition: 0.5s;
-         
-          width:600px ;
-        margin-left: 110px;
-        
-          }
-          .new{
-  
-            
-            position: relative;
-            border-radius: 5px;
-            right: 25px;
-            
-          }
-          .newi{
-            width:584px;
-            padding: 25px ;
-          position: relative;
-            border-radius: 5px;
-            font-size: 35px;
-           
-            left: -20px;
-          }
-          .one{
-            position: relative;
-            padding: 10px;
-            margin-bottom: 20px;
-            right: 25px;
-          }
-          
-          .onei{
-            width:100%;
-            padding: 25px;
-            
-            border-radius: 5px;
-            font-size: 35px;
-          }
-          
-          .delete{
-            position:relative;
-           left: 365px;
-            top: -75px;
-            color: #000;
-            cursor: pointer;
-            font-size: 45px;
-            }
-          
-            .inp{
-              width: 100%;
-              padding: 25px;
-              text-transform: uppercase;
-              font-size: 30px;
-              color: gray;
-              border-radius: 5px;
-            }
-            .inpi{
-            padding: 10px;
-          position: relative;
-          text-transform: uppercase;
-          right: 25px;
-          
-            }
-            .close {
-               
-              margin-left: 600px;
-              font-size: 45px;
-            }
-            
-            .head {
-             
-              font-size: 35px;
-            }
-            .add_form_field{
-              padding:10px 200px;
-             margin: -40px;
-             margin-bottom: 20px;
-             margin-right: -43px;
-              font-size: 25px;
-            }
-          
-            .form-btn{
-              background: 0 0 #fff;
-              border:1px solid #aaa;
-              border-radius:3px;
-              color:var(--font-color);
-              font-size: 25px;
-              padding:20px 280px;
-              margin-left: -15px;
-              text-transform:uppercase;
-              cursor: pointer;
-            }
-            .about{
-              text-align: right;
-              padding: 2px;
-              font-size: 30px;
+@media only screen and (min-width: 1024px) {
+  .img1 {
+    margin-right: 30px;
+    width: 70%;
+    padding-top: 20px;
+  }
+  .main-text h2 {
+    padding: 30px 10px;
+    font-size: 40px;
+  }
+  .main-text h1 {
+    left: 100px;
+    font-size: 70px;
+  }
+  .main-text {
+    padding-top: 50px;
+    width: 100%;
+  }
+  .form-btn {
+    padding: 10px 100px;
+  }
+  .delete {
+    left: 215px;
+    top: -30px;
+    font-size: 30px;
+  }
+  .close {
+    margin-left: 350px;
+  }
+  .search-bar {
+    padding: 15px 10px 10px 15px;
+    margin: 10px -15px 50px 10px;
+    top: 10px;
+    width: 700px;
+    border-width: 3px;
+    border-radius: 25px;
+    border: 4px #DC602E solid;
+    font-size: 35px;
+  }
+  .btn {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    top: 13px;
+    left: -35px;
+  }
+  .autocomplete-items {
+    width: 700px;
+    font-size: 45px;
+    top: 90px;
+    left: 20px;
+  }
+  #divi {
+    bottom: -20px;
+    font-size: 45px;
+  }
+  .footer {
+    margin: 360px 0px 10px 0px;
+    font-size: 35px;
+  }
+  .search-bar::placeholder {
+    text-transform: uppercase;
+    color: gray;
+    font-size: 30px;
+  }
+  #popup {
+    padding: 7rem;
+    margin-top: -850px;
+    transition: 0.5s;
+    width: 600px;
+    margin-left: 110px;
+  }
+  .new {
+    position: relative;
+    border-radius: 5px;
+    right: 25px;
+  }
+  .newi {
+    width: 584px;
+    padding: 25px;
+    position: relative;
+    border-radius: 5px;
+    font-size: 35px;
+    left: -20px;
+  }
+  .one {
+    position: relative;
+    padding: 10px;
+    margin-bottom: 20px;
+    right: 25px;
+  }
+  .onei {
+    width: 100%;
+    padding: 25px;
+    border-radius: 5px;
+    font-size: 35px;
+  }
+  .delete {
+    position: relative;
+    left: 365px;
+    top: -75px;
+    color: #000;
+    cursor: pointer;
+    font-size: 45px;
+  }
+  .inp {
+    width: 100%;
+    padding: 25px;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: gray;
+    border-radius: 5px;
+  }
+  .inpi {
+    padding: 10px;
+    position: relative;
+    text-transform: uppercase;
+    right: 25px;
+  }
+  .close {
+    margin-left: 600px;
+    font-size: 45px;
+  }
+  .head {
+    font-size: 35px;
+  }
+  .add_form_field {
+    padding: 10px 200px;
+    margin: -40px;
+    margin-bottom: 20px;
+    margin-right: -43px;
+    font-size: 25px;
+  }
+  .form-btn {
+    background: 0 0 #fff;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    color: var(--font-color);
+    font-size: 25px;
+    padding: 20px 280px;
+    margin-left: -15px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .about {
+    text-align: right;
+    padding: 2px;
+    font-size: 30px;
+  }
+  .btna {
+    background: #474448;
+    background-size: inherit;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+    width: 150px;
+    height: 50px;
+    border-width: 1.5px;
+  }
+  .wonder {
+    font-size: 20px;
+  }
+}
 
-            }
-            .btna{
-              
-              background: #474448;
-              background-size: inherit;
-              border-radius: 10px;
-              color: white;
-              cursor: pointer;
-              font-size: 30px;
-              width: 150px;
-              height: 50px;
-              border-width: 1.5px;
-            }
-            .wonder{
-              font-size: 20px ;
-            }
-            
-           
-    }
+@media only screen and (min-width: 1240px) {
+  .img1 {
+    margin-right: 30px;
+    width: 40%;
+    padding-top: 5px;
+  }
+  .wonder {
+    position: inherit;
+    bottom: 30px;
+  }
+  .main-text h2 {
+    padding: 20px 10px;
+    font-size: 40px;
+  }
+  .main-text h1 {
+    left: 100px;
+    padding: -20px;
+    font-size: 40px;
+  }
+  .main-text {
+    padding-top: 50px;
+    width: 100%;
+  }
+  .form-btn {
+    padding: 10px 100px;
+  }
+  .delete {
+    left: 310px;
+    top: -40px;
+    font-size: 30px;
+  }
+  .close {
+    margin-left: 600px;
+  }
+  .search-bar {
+    padding: 15px 10px 10px 15px;
+    margin: 10px -15px 50px 10px;
+    top: 10px;
+    width: 700px;
+    border-width: 3px;
+    border-radius: 25px;
+    border: 4px #DC602E solid;
+    font-size: 35px;
+  }
+  .btn {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    top: 13px;
+    left: -35px;
+  }
+  .autocomplete-items {
+    width: 700px;
+    font-size: 45px;
+    margin-bottom: 10px;
+    top: 93px;
+  }
+  #divi {
+    bottom: 370px;
+    font-size: 45px;
+  }
+  .footer {
+    margin: -90px 0px 10px 0px;
+    font-size: 35px;
+    z-index: 0;
+  }
+  .search-bar::placeholder {
+    text-transform: uppercase;
+    color: gray;
+    font-size: 30px;
+  }
+  #popup {
+    box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);
+    padding: 2rem 5rem;
+    background-color: #fff;
+    margin-top: -470px;
+    position: relative;
+    transition: 0.5s;
+    visibility: hidden;
+    width: 600px;
+    margin-left: 270px;
+  }
+  .new {
+    width: 582px;
+    position: relative;
+    border-radius: 5px;
+    left: 20px;
+  }
+  .newi {
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+  .one {
+    position: relative;
+    margin-bottom: 20px;
+    right: 8.5px;
+  }
+  .onei {
+    width: 100%;
+    padding: 10px;
+    right: 8.5px;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+  .inp::placeholder {
+    font-size: 20px;
+  }
+  .onei::placeholder {
+    font-size: 20px;
+  }
+  .newi::placeholder {
+    font-size: 20px;
+  }
+  .inp {
+    width: 100%;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+  .inpi {
+    padding: 10px;
+    position: relative;
+    text-transform: uppercase;
+    right: 8.5px;
+    font-size: 20px;
+  }
+  .head {
+    font-size: 25px;
+  }
+  .add_form_field {
+    background: 0 0 #fff;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    color: var(--font-color);
+    font-size: 1em;
+    padding: 20px 220px;
+    margin: -40px;
+    margin-bottom: 20px;
+    margin-left: -30px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .form-btn {
+    background: 0 0 #fff;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    color: var(--font-color);
+    font-size: 1em;
+    padding: 20px 270px;
+    margin-left: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .about {
+    text-align: right;
+    padding: 2px;
+    font-size: 30px;
+  }
+  .btna {
+    font-size: 20px;
+    background: #474448;
+    background-size: inherit;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    width: 200px;
+    height: 35px;
+    border-width: 1.5px;
+  }
+}
 
-    @media only screen and (min-width: 1240px) {
-      .img1 {
-        margin-right: 30px;
-        width: 40%;
-        padding-top: 10px;
-      }
-      .wonder {
-        position: inherit;
-        bottom: 30px;
-      }
-      .main-text h2 {
-        padding: 20px 10px ;
-          font-size: 40px;
-          
-        }
-        .main-text h1 {
-          left: 100px;
-         padding: -20px;
-          font-size: 40px;
-          
-        }
-        .main-text{
-          padding-top: 50px;
-          width: 100%;
-        }
-      
-      .form-btn{
-        padding:10px 100px;
-      }
-     
-      .delete{
-       left: 310px;
-        top: -40px;
-        font-size: 30px;
-        }
-        .close {
-          margin-left: 600px;
-        }
-        .search-bar {
-          padding: 15px 10px 10px 15px;
-          margin: 10px -15px 50px 10px;
-          top: 10px;
-          width: 700px;
-          border-width: 3px;
-          border-radius: 25px;
-          border: 4px  #DC602E solid;
-          font-size: 35px;
-          }
-          .btn {
-            position: relative;
-            height: 30px;
-            width: 30px;
-            top: 13px;
-            left: -35px;
-            
-            }
-            .autocomplete-items {
-              width: 700px;
-              font-size: 45px;
-              margin-bottom: 10px;
-              top: 93px;
-            }
-           
-          
-          #divi{
-            bottom: 310px;
-            font-size: 45px;
-            
-          }
-          .footer {
-           margin: -90px 0px 10px 0px;
-           font-size: 35px;
-            z-index: 0;
-            }
-          
-        .search-bar::placeholder { 
-        text-transform: uppercase;
-        color: gray;
-        font-size: 30px;
-        }
-        #popup{
-          
-          box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
-          padding: 2rem 5rem;
-          background-color:#fff;
-          margin-top: -470px;
-          position: relative;
-          transition: 0.5s;
-          visibility: hidden;
-          width:600px;
-        margin-left: 270px;
-        
-          }
-          .new{
-  
-            width:582px;
+@media only screen and (min-width: 1280px) {
+  .footer {
+    margin: 40px 0px 10px 0px;
+  }
+}
 
-            position: relative;
-            border-radius: 5px;
-            left: 20px;
-            
-          }
-          .newi{
-            width: 100%;
-            padding: 10px ;
-          position: relative;
-            border-radius: 5px;
-            font-size: 20px;
-           
-          }
-          .one{
-            position: relative;
-            
-            margin-bottom: 20px;
-            right: 8.5px;
-            
-            
-          }
-          
-          .onei{
-            width:100%;
-            padding: 10px;
-          right: 8.5px;
-            border-radius: 5px;
-            font-size: 20px;
-          }
-          
-          
-          .inp::placeholder {
-            font-size: 20px;
-          }
-          .onei::placeholder{
-            font-size: 20px;
-          }
-          .newi::placeholder{
-            font-size: 20px;
-          }
-            .inp{
-              width: 100%;
-              padding: 10px;
-              text-transform: uppercase;
-              font-size: 20px;
-              
-              border-radius: 5px;
-            }
-            .inpi{
-            padding: 10px;
-          position: relative;
-          text-transform: uppercase;
-          right: 8.5px;
-          font-size: 20px;
-          
-            }
-           
-            
-            .head {
-             
-              font-size: 25px;
-            }
-            .add_form_field{
-              background: 0 0 #fff;
-              border:1px solid #aaa;
-              border-radius:3px;
-              color:var(--font-color);
-              font-size:1em;
-              padding:20px 220px  ;
-              
-             margin: -40px ;
-             margin-bottom: 20px;
-             margin-left: -30px;
-              text-transform:uppercase;
-              cursor: pointer;
-            }
-          
-            .form-btn{
-              background: 0 0 #fff;
-              border:1px solid #aaa;
-              border-radius:3px;
-              color:var(--font-color);
-              font-size:1em;
-              padding:20px 270px;
-              margin-left: 5px;
-              text-transform:uppercase;
-              cursor: pointer;
-            }
-            .about{
-              text-align: right;
-              padding: 2px;
-              font-size: 30px;
+@media only screen and (min-width:1366px) {
+  #popup {
+    margin-left: 300px;
+    margin-top: -520px;
+  }
+  .footer {
+    margin: 10px 0px 10px 0px;
+  }
+}
 
-            }
-            .btna{
-              font-size: 20px;
-              background: #474448;
-              background-size: inherit;
-              border-radius: 10px;
-              color: white;
-              cursor: pointer;
-              width: 200px;
-              height: 35px;
-              border-width: 1.5px;
-            }
-           
-    
-    }
-    @media only screen and (min-width: 1280px){
-      .footer{
-        margin: 40px 0px 10px 0px;
-      }
-    }
-    @media only screen and (min-width:1366px){
-      #popup{
-        margin-left: 300px;
-        margin-top: -520px;
-      }
-      .footer{
-        margin: 10px 0px 10px 0px;
-      }
-    }
-    @media only screen and (min-width:1440px){
-      #popup{
-        margin-left: 335px;
-      }
-    }
-    @media only screen and (min-width: 1536px) {
-      #popup {
-        margin-left: 390px;
-        margin-top: -600px;
-      }
-    }
-    @media only screen and (min-width: 1600px){
-      #popup{
-        margin-left: 425px;
-      }
-    }
-    @media only screen and (min-width:1680px){
-      #popup{
-        margin-left: 470px;
-      }
-      .footer{
-        margin: 40px 0px 10px 0px;
-      }
-    }
-    @media only screen and (min-width:1920px){
-      #popup{
-        margin-left: 580px;
-      }
-      .footer{
-        margin: 20px 0px 10px 0px;
-      }
-    }
-    @media only screen and (min-width: 2560px){
+@media only screen and (min-width:1440px) {
+  #popup {
+    margin-left: 335px;
+  }
+}
 
+@media only screen and (min-width: 1536px) {
+  #popup {
+    margin-left: 390px;
+    margin-top: -600px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  #popup {
+    margin-left: 425px;
+  }
+}
+
+@media only screen and (min-width:1680px) {
+  #popup {
+    margin-left: 470px;
+  }
+  .footer {
+    margin: 40px 0px 10px 0px;
+  }
+}
+
+@media only screen and (min-width:1920px) {
+  #popup {
+    margin-left: 580px;
+  }
+  .footer {
+    margin: 20px 0px 10px 0px;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+
+}
+
+
+@keyframes FadeIn {
+    0% {
+      opacity:0;
     }
-    
+    100% {
+      opacity:1;
+    }
+}
+
+
+@keyframes slideInFromBottom {
+  0% { 
+    transform: translateY(20px); opacity: 0;
+   }
+  100%{ 
+    transform: translateY(0); opacity: 1; 
+  }
+}

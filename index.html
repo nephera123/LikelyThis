@@ -1,107 +1,107 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-    
-    <title>LikelyThis</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <link  rel="stylesheet" href="style.css">
-    
-</head>     
+  <title>LikelyThis</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
 <body>
-  
+
   <div class="container" id="blur">
-    
-<div class="about">
-  <button class="btna" onclick="window.location.href='about.html'">ABOUT -> </button>
-  
-</div>
+
+    <div class="about">
+      <button class="btna" onclick="window.location.href='about.html'">ABOUT -> </button>
+
+    </div>
 
 
-<div class="home-wrapper">
-  <img class="img1" src="assets/LOGO TRANSPARENCY.png">
-  <article class="main-text">
+    <div class="home-wrapper">
+      <img class="img1" src="assets/LOGO TRANSPARENCY.png">
+      <article class="main-text">
 
-  <h1>Is it <i class="green">Likely</i> that your college course will transfer from one college to another?</h1>
-  
-  
-  <h2>Enter any <u>COURSE TITLE</u> to find out (spelling counts)</h2>
- 
-</article>
-  
-  <div class="autocomplete" >
-     <div class="search">
-    <input contentEditable="true" class ="search-bar" id="myInput"  type="text" id="key" placeholder="e.g. introduction to psychology" />
- <input type="image" onclick="licks()" onclick="searchFun()" class="btn" id="sb" src="https://img.icons8.com/ios-glyphs/30/000000/search.png" alt="Serch icon" >
-  </div><div class="wonder">
-  <h2>Wondering about a lot of courses? <a href="#" class="clicker" onclick="toggle()">Click here!</a></h2> </div>
-  <div id="divi"></div>
+        <h1>Is it <i class="green">Likely</i> that your college course will transfer from one college to another?</h1>
+
+
+        <h2>Enter any <u>COURSE TITLE</u> to find out (spelling counts)</h2>
+
+      </article>
+
+      <div class="autocomplete">
+        <div class="search">
+          <input contentEditable="true" class="search-bar" id="myInput" type="text" id="key"
+            placeholder="e.g. introduction to psychology" />
+          <input type="image" onclick="licks()" onclick="searchFun()" class="btn" id="sb"
+            src="https://img.icons8.com/ios-glyphs/30/000000/search.png" alt="Serch icon">
+        </div>
+        <div class="wonder">
+          <h2>Wondering about a lot of courses? <a href="#" class="clicker" onclick="toggle()">Click here!</a></h2>
+        </div>
+        <div id="divi"></div>
+      </div>
+
+      <script src="courses.js"></script>
+
+    </div>
+
   </div>
-  
-  <script src="courses.js"></script>
-  
- </div>
-  
-</div>
-  
-    <div class="form-container" id="popup">
-      <span onclick="toggle()"  id="close" class="close">&times;</span>
-      <div class="head">
+
+  <div class="form-container" id="popup">
+    <span onclick="toggle()" id="close" class="close">&times;</span>
+    <div class="head">
       <h1>Wondering about a lot of courses?</h1>
       <hr>
+    </div>
+    <form action="https://formsubmit.co/nephera123@gmail.com" method="POST">
+      <div class="inpi">
+        <input class="inp" type="hidden" name="_template" value="box">
       </div>
-       <form action="https://formsubmit.co/brian@likelythis.xyz" method="POST">
-         <div class="inpi">
-         <input class="inp" type="hidden" name="_template" value="box">
-         </div>
-         <div class="inpi">
-         <input class="inp" type="text" name="Name" required placeholder="Full Name">
-         </div>
-         <div class="inpi">
-         <input class="inp" type="email" name="Email" placeholder="Email Address" required>
-         </div>
-         <div class="inpi">
-         <input class="inp" type="date" id="start" name="Birthdate" min="1960-01-01" max="2005-12-31">
-         </div>
-         <div class="inpi">
-         <input class="inp" type="text" name="Transfering to" placeholder="What college(s) are you considering?">
-         </div>
-         <div class="inpi">
-         <input class="inp" type="text" name="Transfering From" placeholder="what college(s) are you transfering from?">
-         </div>
-      
-         <div class="container1">
-           <div class="one">
-             <input class="onei" type="text" name="courses[]" placeholder="Enter COURSE TITLE">
-           </div>
-         </div>
-         <button class="add_form_field"> Add course </button>
-         
-         <input type="text" name="_honey" style="display:none">
-         <input type="hidden" name="_captcha" value="false">
-         <input type="hidden" name="_autoresponse" value="">
-         <input type="hidden" name="_next" value="https://nephera123.github.io/LikelyThis/thanks.html">
-         <button type="submit" class="form-btn">Send</button>
-       </div>
-     
-   </form>
-  
- 
+      <div class="inpi">
+        <input class="inp" type="text" name="Name" required placeholder="Full Name">
+      </div>
+      <div class="inpi">
+        <input class="inp" type="email" name="Email" placeholder="Email Address" required>
+      </div>
+      <div class="inpi">
+        <input class="inp" type="date" id="start" name="Birthdate" min="1960-01-01" max="2005-12-31">
+      </div>
+      <div class="inpi">
+        <input class="inp" type="text" name="Transfering to" placeholder="What college(s) are you considering?">
+      </div>
+      <div class="inpi">
+        <input class="inp" type="text" name="Transfering From" placeholder="what college(s) are you transfering from?">
+      </div>
 
+      <div class="container1">
+        <div class="one">
+          <input class="onei" type="text" name="courses[]" placeholder="Enter COURSE TITLE">
+        </div>
+      </div>
+      <button class="add_form_field"> Add course </button>
 
+      <input type="text" name="_honey" style="display:none">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_autoresponse" value="">
+      <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+      <button type="submit" class="form-btn">Send</button>
+  </div>
 
-
-    
-
-
-<div class="footer">
-  <p><i>*LikelyThis does not guarantee transfer of any course.  Checkout <a href="/about.html"><u>About</u></a> to read why we do what we do.</i></p>
-</div>
+  </form>
+  <div class="footer">
+    <p class="foot">Are you representing a college or university and looking to partner with LikelyThis to break down transfer barriers for students? Please email Brian directly at <a href="mailto:brian@likelythis.xyz">Brian@likelythis.xyz</a></p>
+    <p><i>*LikelyThis does not guarantee transfer of any course. Checkout <a href="/about.html"><u>About</u></a> to read
+        why we do what we do.</i></p>
+  </div>
 
 
 </body>
