@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+a{
+    color: #E16036;
+}
+
 body {
     text-align: center;
     background-color: #E5FCF5;
