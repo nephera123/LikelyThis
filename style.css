@@ -538,6 +538,24 @@ input.onei:focus {
   }
 }
 
+@media only screen and (min-width:428px){
+  #popup {
+    width: 270px;
+    margin-top: -570px;
+    margin-left: 50px;
+    align-items: center;
+    position: absolute;
+  }
+  .foot{
+    font-size: 18px;
+    margin: 90px 0px 10px 0px;
+    position: absolute;
+  }
+  .footer {
+    margin: 290px 0px 10px 0px;
+  }
+}
+
 @media only screen and (min-width: 480px) {
   #popup {
     width: 300px;
