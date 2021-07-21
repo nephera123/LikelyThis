@@ -121,7 +121,7 @@ input.search-bar:focus {
   left: 50px;
   width: 270px;
   border-radius: 15px;
-  text-transform: uppercase;
+  text-transform:uppercase;
 }
 
 .green {
