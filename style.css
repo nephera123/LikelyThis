@@ -65,7 +65,7 @@ a{
   padding: 0px 10px 0px 10px;
   font-family: 'Rajdhani', sans-serif;
   font-size: 17px;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 .search-bar::placeholder {
