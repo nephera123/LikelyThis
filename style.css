@@ -26,6 +26,11 @@ a{
 }
 .foot{
   font-size: 20px;
+  
+    
+    margin: 100px 0px 10px 0px;
+    position: absolute;
+ 
 }
 .img1 {
   margin-right: 30px;
@@ -936,8 +941,16 @@ input.onei:focus {
     top: 93px;
   }
   #divi {
-    bottom: 370px;
+    bottom: 540px;
     font-size: 45px;
+  }
+  .foot{
+    font-size: 30px;
+    
+      bottom: 220px;
+    line-height: 50px;
+      position: relative;
+   
   }
   .footer {
     margin: -90px 0px 10px 0px;
