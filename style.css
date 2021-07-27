@@ -1185,11 +1185,15 @@ margin: 180px 0px 10px 0px;
     margin-left: 580px;
   }
   .footer {
-    margin: 20px 0px 10px 0px;
+    margin: 500px 0px 10px 0px;
    
   }
+  .foot{
+    margin: -610px 0px 10px 0px;
+    bottom: 0px;
+  }
   #divi{
-    bottom: 450px;
+    bottom: -260px;
   }
 }
 
