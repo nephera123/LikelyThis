@@ -378,7 +378,7 @@ input.onei:focus {
     font-size: 30px;
   }
   .search-bar {
-    margin: 10px -15px 50px 10px;
+    margin: 10px -20px 50px 10px;
     top: 10px;
     width: 236.7px;
     font-size: 15px;
@@ -393,8 +393,15 @@ input.onei:focus {
     width: 236.7px;
   }
   .footer {
-    margin: 90px 0px 10px 0px;
-    font-size: 15px;
+    margin: 80px 0px 10px 0px;
+    font-size: 11px;
+  }
+  .foot {
+    font-size: 14px;
+    bottom: 10px;
+  }
+  #divi {
+    bottom: 170px;
   }
 }
 
@@ -414,6 +421,16 @@ input.onei:focus {
     left: 35px;
     width: 250px;
   }
+  .foot{
+    top: 500px;
+    font-size: 13px;
+  }
+  #divi{
+    bottom: 20px;
+  }
+  .wonder{
+    font-size: 10px;
+  }
 }
 
 @media only screen and (min-width: 360px) {
@@ -430,6 +447,18 @@ input.onei:focus {
   .close {
     margin-left: 240px;
   }
+  .foot{
+    bottom: 0px;
+    font-size:13px ;
+  top: 480px;
+  }
+  .footer{
+    font-size: 12px;
+    
+  }
+  #divi{
+    bottom: 10px;
+  }
 }
 
 @media only screen and (min-width: 375px) {
@@ -442,7 +471,7 @@ input.onei:focus {
   }
   .foot{
     font-size: 18px;
-    margin: 70px 0px 10px 0px;
+    margin: 90px 0px 10px 0px;
     position: absolute;
   }
   .inp {
@@ -467,6 +496,7 @@ input.onei:focus {
   .footer {
     margin: 190px 0px 10px 0px;
   }
+ 
 }
 
 @media only screen and (min-width: 411px) {
@@ -534,8 +564,18 @@ input.onei:focus {
     font-size: 30px;
   }
   .footer {
-    margin: 150px 0px 10px 0px;
+    margin: 190px 0px 10px 0px;
   }
+  .foot{
+    
+    margin: 150px 0px 0px 0px;
+  }
+}
+@media (min-width: 414px){
+.foot{
+bottom: 100px;
+margin: 180px 0px 10px 0px;
+}
 }
 
 @media only screen and (min-width:428px){
@@ -548,7 +588,8 @@ input.onei:focus {
   }
   .foot{
     font-size: 18px;
-    margin: 90px 0px 10px 0px;
+    bottom: 0px;
+    margin: 190px 0px 10px 0px;
     position: absolute;
   }
   .footer {
@@ -657,6 +698,7 @@ input.onei:focus {
   }
   .footer {
     margin: 170px 0px 10px 0px;
+    font-size: 20px;
   }
   .main-text h1 {
     font-size: 35px;
@@ -667,6 +709,9 @@ input.onei:focus {
   #divi {
     bottom: 10px;
     font-size: 25px;
+  }
+  .foot{
+    margin: 150px 0px 10px 0px;
   }
 }
 
@@ -733,6 +778,9 @@ input.onei:focus {
   .footer {
     margin: 370px 0px 10px 0px;
     font-size: 20px;
+  }
+  .foot{
+    margin:190px 0px 10px 0px;
   }
 }
 
@@ -898,6 +946,10 @@ input.onei:focus {
   }
   .wonder {
     font-size: 20px;
+  }
+  .foot{
+    margin: 500px 0px 10px 0px;
+    font-size: 30px;
   }
 }
 
@@ -1128,12 +1180,16 @@ input.onei:focus {
   }
 }
 
-@media only screen and (min-width:1920px) {
+@media only screen and (min-width:1900px) {
   #popup {
     margin-left: 580px;
   }
   .footer {
     margin: 20px 0px 10px 0px;
+   
+  }
+  #divi{
+    bottom: 450px;
   }
 }
 
