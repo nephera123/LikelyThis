@@ -80,7 +80,12 @@ function toggle() {
   var popup = document.getElementById('popup');
   popup.classList.toggle('active');
 }
-
+courseInput.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("sb").click();
+  }
+});
 function searchFun() {
 
   if (courses.includes(courseInput.value)) {
