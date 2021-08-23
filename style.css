@@ -29,7 +29,7 @@ a{
   
     
     margin: 100px 0px 10px 0px;
-    position: absolute;
+    position: relative;
  
 }
 .img1 {
@@ -1011,19 +1011,20 @@ margin: 180px 0px 10px 0px;
     top: 93px;
   }
   #divi {
-    bottom: 540px;
+    bottom: 250px;
     font-size: 45px;
   }
   .foot{
     font-size: 30px;
-    
-      bottom: 220px;
+    margin: 0px;
+      top: 700px;
     line-height: 50px;
-      position: relative;
+    
    
   }
   .footer {
-    margin: -90px 0px 10px 0px;
+    margin:0px;
+    bottom: -250px;
     font-size: 35px;
     z-index: 0;
   }
@@ -1150,6 +1151,9 @@ margin: 180px 0px 10px 0px;
   .footer {
     margin: 10px 0px 10px 0px;
   }
+  #divi{
+    bottom: 180px;
+  }
 }
 
 @media only screen and (min-width:1440px) {
@@ -1163,11 +1167,20 @@ margin: 180px 0px 10px 0px;
     margin-left: 390px;
     margin-top: -600px;
   }
+  #divi{
+    bottom: 100px;
+  }
+  .footer{
+    bottom: 0px;
+  }
 }
 
 @media only screen and (min-width: 1600px) {
   #popup {
     margin-left: 425px;
+  }
+  .footer{
+    bottom: -100px;
   }
 }
 
