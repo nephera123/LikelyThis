@@ -473,6 +473,7 @@ input.onei:focus {
     font-size: 18px;
     margin: 90px 0px 10px 0px;
     position: absolute;
+    top: 530px;
   }
   .inp {
     text-transform: uppercase;
