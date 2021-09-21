@@ -1199,15 +1199,16 @@ margin: 180px 0px 10px 0px;
     margin-left: 580px;
   }
   .footer {
-    margin: 500px 0px 10px 0px;
-   
+    margin: 0px;
+   bottom: 10px;
   }
   .foot{
-    margin: -610px 0px 10px 0px;
-    bottom: 0px;
+    margin: 0px;
+top: 700px;
+  
   }
   #divi{
-    bottom: -260px;
+    bottom: 100px;
   }
 }
 
