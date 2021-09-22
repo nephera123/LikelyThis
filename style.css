@@ -473,7 +473,7 @@ input.onei:focus {
     font-size: 18px;
     margin: 90px 0px 10px 0px;
     position: absolute;
-    top: 530px;
+    top: 570px;
   }
   .inp {
     text-transform: uppercase;
@@ -495,7 +495,7 @@ input.onei:focus {
     font-size: 10px;
   }
   .footer {
-    margin: 190px 0px 10px 0px;
+    margin: 220px 0px 10px 0px;
   }
  
 }
