@@ -4,9 +4,75 @@
     margin: 0;
     padding: 0;
 }
+.nli{
+    list-style-type: none;
+    margin: 2vw 0;
+    
+    font-size: 3vh;
+  }
+  
+  .na{
+    text-decoration: none;
+    color: black;
+    font-family: monospace;
+  
+    padding: 2vw;
+  }
+  
+  nav{
+    width: 100vw;
+    background-color: #D6EFFF;
+  }
+  
+  .nul{
+    display: block;
+    margin: 0;
+    padding: 0px;
+   justify-content: flex-end;
 
+    display: flex;  
+  }
+  
+  body{
+    margin: 0;
+  }
+  
+  button{
+    display: none;
+  }
+  
+  .na:hover{
+    background-color: #C6E9FF;
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .nul{
+      flex-direction: column;
+    }
+    
+    .na{
+      display: block;
+    }
+    
+    .nli{
+      margin: 0;
+    }
+    
+    button{
+      display: block;
+      
+      padding: 2vw;
+      font-size: 3vh;
+      background-color: #AFE0FF;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      
+      align-self: flex-start;
+    }
+  }
 body{
-    background-color: #E5FCF5;
+    background-color: #e5f3fc;
   font-family: 'Rajdhani', sans-serif;
   animation:  slideInFromBottom 1s cubic-bezier(.38, .05, .83, .67);
 }
