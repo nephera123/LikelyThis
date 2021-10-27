@@ -128,7 +128,7 @@ if (majreq.includes(courseInput.value)) {
 } 
   else {
     divi.innerHTML = `${courseInput.value} is <span class="red">Unlikely</span>  to Transfer`;
-    document.body.appendChild(divi);
+    //document.body.appendChild(divi);
   
 }
 
