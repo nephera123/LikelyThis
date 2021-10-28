@@ -72,15 +72,15 @@
   .footer-col ul li a{
 	  font-size: 16px;
 	  text-transform: capitalize;
-	  color: #ffffff;
+	  color: #838383;
 	  text-decoration: none;
 	  font-weight: 300;
-	  color: #bbbbbb;
+	  color: #424242;
 	  display: block;
 	  transition: all 0.3s ease;
   }
   .footer-col ul li a:hover{
-	  color: #ffffff;
+	  color: #616161;
 	  padding-left: 8px;
   }
   
@@ -285,7 +285,7 @@ button{
 }
 
 
-@media screen and (max-width:280px){
+@media screen and (min-width:280px){
 	.wrapper {
 		padding: 60px;
 		display: flex;
@@ -296,5 +296,21 @@ button{
 	}
 	.nul{
 		flex-direction: column;
+	}
+}
+@media(min-width:768px){
+	.nul{
+		flex-direction: row;
+		
+	}
+	.wrapper{
+		padding-bottom:168px;
+		
+	}
+	
+}
+@media (height:1366px){
+	.wrapper{
+		padding-bottom:486px;
 	}
 }

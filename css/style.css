@@ -1,22 +1,5 @@
-/* ----------------------------------------------------
-  
-    File Name: style.css
-    Template Name: Documentation
-    Created By: Surjith S M
-    http://themeforest.net/user/surjithctly
-
-    1. IMPORT
-    2. SKELETON
-    
-------------------------------------------------------- */
-/* ----------------------------------------------------
-    IMPORT  
-------------------------------------------------------- */
 
 @import url(http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic);
-/* ----------------------------------------------------
-    SKELETON    
-------------------------------------------------------- */
 
 
 *,
@@ -92,15 +75,15 @@ ul{
 .footer-col ul li a{
 	font-size: 16px;
 	text-transform: capitalize;
-	color: #ffffff;
+	color: #8f8f8f;
 	text-decoration: none;
 	font-weight: 300;
-	color: #bbbbbb;
+  color: #424242;
 	display: block;
 	transition: all 0.3s ease;
 }
 .footer-col ul li a:hover{
-	color: #ffffff;
+	color: #8a8a8a;
 	padding-left: 8px;
 }
 
@@ -447,7 +430,7 @@ time {
 
 body {
     background-color: #e5f3fc;
-    color: #777777;
+    color: #464646;
     font-size: 14px;
     line-height: 31px;
     letter-spacing: 0;
@@ -671,7 +654,7 @@ h4 a {
 .intro1 {
     margin-top: 22px;
     padding: 30px 0px;
-    background-color: #f3f3f3;
+    background-color: #fcfcfc;
 }
 
 .intro1 li {
@@ -683,7 +666,7 @@ h4 a {
 }
 
 .intro a {
-    color: #030303;
+    color: #000000;
     font-weight: 400;
     font-size: 16px;
 }
@@ -767,7 +750,7 @@ a:hover {
 }
 
 .btn-info {
-    background-color: #545454;
+    background-color: #3b3b3b;
     border: 1px solid #656565;
 }
 
