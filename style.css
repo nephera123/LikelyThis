@@ -12,7 +12,9 @@ body{
 	padding:0;
 	box-sizing: border-box;
 }
-
+.frmtx{
+  font-size: 35px;
+}
 .header-hr {
   display: inline-block;
   margin-top: 0.5em;
@@ -487,7 +489,7 @@ input.search-bar:focus {
   display: flex;
     justify-content: space-between;
     width: 1200px;
-   
+       align-items: baseline;
     margin-top: 150px;
 }
 #popup {
@@ -1425,6 +1427,7 @@ nav{
     text-align: right;
     padding: 2px;
     font-size: 30px;
+	
   }
   .btna {
     background: #474448;
@@ -1442,6 +1445,7 @@ nav{
   }
   .wonder1{
     font-size: 20px;
+	  width:340px;
   }
   .foot{
     margin: 500px 0px 10px 0px;
@@ -1462,6 +1466,7 @@ nav{
   .wonder {
     position: inherit;
     bottom: 30px;
+	    width: 500px;
   }
   .main-text h2 {
     padding: 20px 10px;
@@ -1703,7 +1708,9 @@ nav{
     margin-left: 335px;
   }
   #divi{
-  bottom: 220px;
+  left: 390px;
+    width: 600px;
+    bottom: -60px;
   }
 .autocomplete-items{
   left: 140px;
