@@ -489,7 +489,7 @@ input.search-bar:focus {
   display: flex;
     justify-content: space-between;
     width: 1200px;
-       align-items: baseline;
+    align-items: baseline;
     margin-top: 150px;
 }
 #popup {
@@ -771,8 +771,7 @@ padding: 20px;
     padding: 1rem;
   }
   #divi {
-    bottom: -140px;
-    width: 280px;
+    bottom: -150px;
   }
 }
 
@@ -807,11 +806,7 @@ padding: 20px;
     font-size: 12px;
   }
 }
-@media (height:480px){
-  #divi{
-    bottom: -300px;
-  }
-}
+
 @media only screen and (min-width: 360px) {
   #popup {
     margin-left: 23px;
@@ -859,7 +854,7 @@ padding: 20px;
   }
   #divi{
     bottom: -100px;
-    width: 370px;
+    width: 360px;
   }
 }
 
@@ -912,11 +907,12 @@ padding: 20px;
   }
  #divi{
    bottom: -80px;
+   width: 375px;
  }
 }
 @media  (height: 812px) {
   #divi{
-    bottom: 90px;
+    bottom: 30px;
   }
 }
 
@@ -928,7 +924,7 @@ padding: 20px;
   }
   #divi{
     bottom: -40px;
-    width: 410px;
+    width: 411px;
   }
   .autocomplete-items {
     top: 40px;
@@ -996,9 +992,9 @@ padding: 20px;
     margin: 150px 0px 0px 0px;
   }
 }
-@media  (height: 823px) {
+@media  screen and (min-height: 823px) {
   #divi{
-    bottom: 70px;
+    bottom: 50px;
   }
 }
 @media (min-width: 414px){
@@ -1026,45 +1022,31 @@ margin: 180px 0px 10px 0px;
     margin: 290px 0px 10px 0px;
   }
   #divi{
-     bottom: -50px;
-    width: 430px;
+    bottom: 140px;
+    width: 428px;
   }
 }
 
 @media only screen and (min-width: 480px) {
   #popup {
-    width: 400px;
-    margin-top: -1000px;
-    margin-left: 40px;
-  }
-  nav{
-    height: 200px;
-  }
-  .close{
-    margin-left: 330px;
+    width: 300px;
+    margin-top: -500px;
+    margin-left: 60px;
   }
   .onei {
     font-size: 15px;
   }
-  #divi{
-    width: 480px;
-    bottom: 90px;
-  }
 }
 
 @media only screen and (min-width: 540px) {
-  .autocomplete-items {
-    top: 67px;
-    left: 80px;
-    width: 250px;
-  }
+
   .wonder {
     font-size: 13px;
   }
   .autocomplete-items {
     width: 260px;
     font-size: 25px;
-    left: 45px;
+    left: 5px;
   }
   #popup {
     margin-top: -1000px;
@@ -1152,9 +1134,9 @@ margin: 180px 0px 10px 0px;
     font-size: 20px;
   }
   #divi {
-    bottom: -50px;
+    bottom: -60px;
     font-size: 25px;
-    width: 550px;
+    width: 540px;
   }
   .foot{
     margin: 150px 0px 10px 0px;
@@ -1163,9 +1145,8 @@ margin: 180px 0px 10px 0px;
 
 @media only screen and (min-width: 600px) {
   #popup {
-    width: 500px;
-    margin-left: 50px;
-    margin-top: -880px;
+    width: 400px;
+    margin-left: 70px;
   }
   .newi {
     font-size: 15px;
@@ -1174,18 +1155,7 @@ margin: 180px 0px 10px 0px;
   input#start.inp {
     color: gray;
   }
-  .autocomplete-items{
-    left: 120px;
-    top: 43px;
-  }
- #divi{
-bottom: 260px;
-width: 600px;
- }
- nav{
-   height: 130px;
-   
- }
+ 
   .footer {
     margin: 340px 0px 10px 0px;
   }
@@ -1201,14 +1171,6 @@ width: 600px;
     margin-left: 140px;
     margin-top: -900px;
   }
-  .nul {
-    flex-direction: row;
-    align-items: flex-start;
-    
-}
-nav{
-  height: 65px;
-}
   .form-btn {
     padding: 10px 100px;
   }
@@ -1245,12 +1207,12 @@ nav{
     width: 400px;
     font-size: 25px;
     left: 135px;
+    top: 65px;
   }
   #divi {
     font-size: 25px;
     left: 10px;
-    bottom: 320px;
-    width: 740px;
+    bottom: 280px;
   }
   .main-text h1 {
     font-size: 40px;
@@ -1265,9 +1227,23 @@ nav{
   .foot{
     margin:190px 0px 10px 0px;
   }
+  .nul {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  nav {
+    height: 80px;
+  }
+  .na{
+    font-size: 20px;
+    
+  }
+  #divi{
+    width: 750px;
+  }
 }
 
-@media only screen and (min-width: 1024px) {
+@media (width: 1024px) {
   .img1 {
     margin-right: 30px;
     width: 70%;
@@ -1317,12 +1293,12 @@ nav{
     width: 700px;
     font-size: 45px;
     top: 60px;
-    left: 0px;
+    left: 20px;
   }
   #divi {
-    bottom: 390px;
-    font-size: 35px;
-    width: 1000px;
+    bottom: 30px;
+    font-size: 45px;
+    width: 1024px;
   }
   .footer {
     margin: 360px 0px 10px 0px;
@@ -1427,7 +1403,6 @@ nav{
     text-align: right;
     padding: 2px;
     font-size: 30px;
-	
   }
   .btna {
     background: #474448;
@@ -1442,20 +1417,31 @@ nav{
   }
   .wonder {
     font-size: 20px;
+    width: 400px;
+  }
+  .contain111{
+    margin-top: 190px;
+    width: 750px;
   }
   .wonder1{
     font-size: 20px;
-	  width:340px;
+    width: 340px;
   }
   .foot{
     margin: 500px 0px 10px 0px;
     font-size: 30px;
   }
+
 }
-@media   (height: 600px) {
+@media  (width: 1024px),   (height: 600px) {
   #divi{
-    bottom: -400px;
+    bottom: -440px;
   }
+}
+@media  screen and (min-height: 1366px){
+#divi{
+  bottom: 300px;
+}
 }
 @media only screen and (min-width: 1240px) {
   .img1 {
@@ -1466,7 +1452,7 @@ nav{
   .wonder {
     position: inherit;
     bottom: 30px;
-	    width: 500px;
+    width: 500px;
   }
   .main-text h2 {
     padding: 20px 10px;
@@ -1654,12 +1640,13 @@ nav{
     font-size: 45px;
     margin-bottom: 10px;
     top: 63px;
-    left: 10px;
+    left: 9px;
   }
   #divi {
     bottom: 60px;
     font-size: 30px;
-    width: 890px;
+    left: 0px;
+    width: 1280px;
 
   }
   .contain111{
@@ -1678,11 +1665,7 @@ nav{
     padding: 20px 120px;
   }
 }
-@media (height: 598px){
-  #divi{
-    bottom: -100px;
-  }
-}
+
 @media only screen and (min-width:1366px) {
   #popup {
     margin-left: 300px;
@@ -1691,15 +1674,8 @@ nav{
   .footer {
     margin: 10px 0px 10px 0px;
   }
-  .home-wrapper{
-    height: 900px;
-  }
-  .contain111{
-    margin-top: 190px;
-  }
   #divi{
-    bottom: 90px;
-    width: 1000px;
+    bottom: 40px;
   }
 }
 
@@ -1708,13 +1684,11 @@ nav{
     margin-left: 335px;
   }
   #divi{
-  left: 390px;
-    width: 600px;
-    bottom: 50px;
+  left:390px;
+  width: 600px;
+  bottom: 40px;
   }
-.autocomplete-items{
-  left: 140px;
-}
+
   .home-wrapper{
     height: 850px;
   }
@@ -1731,14 +1705,10 @@ nav{
     margin-top: -600px;
   }
   #divi{
-    bottom: 200px;
-    width: 1150px;
+    bottom: 100px;
   }
   .footer{
     bottom: 0px;
-  }
-  .home-wrapper{
-    height: 500px;
   }
 }
 
@@ -1777,7 +1747,7 @@ top: 700px;
   }
   #divi{
    
-    bottom: 370px;
+    bottom: 200px;
     left: 510px;
   
     width: 900px;
