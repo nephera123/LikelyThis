@@ -1717,11 +1717,13 @@ margin: 180px 0px 10px 0px;
     bottom: 40px;
   }
 }
+
 @media only screen and (width:1440px), (height:900px){
   #divi{
     bottom: 200px;
   }
 }
+
 @media only screen and (min-width:1400px) {
   #popup {
     margin-left: 335px;
@@ -1744,7 +1746,11 @@ margin: 180px 0px 10px 0px;
   
 }
 
-
+@media only screen and (width:1400px), (min-height:1000px){
+  #divi{
+    bottom: 350px;
+  }
+}
 
 @media only screen and (min-width: 1536px) {
   #popup {
