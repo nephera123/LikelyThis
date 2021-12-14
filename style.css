@@ -1252,7 +1252,7 @@ margin: 180px 0px 10px 0px;
 @media only screen and (min-width:941px){
   #divi{
     width: 940px;
-    bottom: 100px;
+    bottom: -20px;
   }
 }
 @media   (width: 1024px),   (height: 600px) {
@@ -1261,7 +1261,12 @@ margin: 180px 0px 10px 0px;
     width: auto;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (width:1024px), (height:768px){
+  #divi{
+    bottom: -250px;
+  }
+  }
+@media only screen and (min-width: 1024px), (height:600px) {
   .img1 {
     margin-right: 30px;
     width: 70%;
@@ -1314,7 +1319,7 @@ margin: 180px 0px 10px 0px;
     left: 20px;
   }
   #divi {
-    bottom: -190px;
+    bottom: -400px;
     font-size: 35px;
     width: 1024px;
   }
@@ -1457,6 +1462,7 @@ margin: 180px 0px 10px 0px;
   bottom: 300px;
 }
 }
+
 @media only screen and (min-width: 1240px) {
   .img1 {
     margin-right: 30px;
@@ -1654,7 +1660,17 @@ margin: 180px 0px 10px 0px;
   }
 }
 
-@media only screen and (min-width: 1280px) {
+
+@media only screen and (min-width:1280px), (min-height:1024px){
+  #divi{
+    bottom: 300px;
+  }
+  #popup{
+    margin-top: -600px;
+  }
+}
+
+@media only screen and (width: 1280px), (height:720px) {
   .footer {
     margin: 40px 0px 10px 0px;
   }
@@ -1701,15 +1717,19 @@ margin: 180px 0px 10px 0px;
     bottom: 40px;
   }
 }
-
+@media only screen and (width:1440px), (height:900px){
+  #divi{
+    bottom: 200px;
+  }
+}
 @media only screen and (min-width:1400px) {
   #popup {
     margin-left: 335px;
   }
   #divi{
   
-  width: auto;
-  bottom: -10px;
+  width: 1400px;
+  bottom: 50px;
   }
 .autocomplete-items{
   left: 150px;
@@ -1723,6 +1743,8 @@ margin: 180px 0px 10px 0px;
   }
   
 }
+
+
 
 @media only screen and (min-width: 1536px) {
   #popup {
@@ -1738,7 +1760,7 @@ margin: 180px 0px 10px 0px;
   }
 }
 
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1600px), (height: 900px) {
   #popup {
     margin-left: 425px;
     margin-top: -900px;
@@ -1747,7 +1769,7 @@ margin: 180px 0px 10px 0px;
     bottom: -100px;
   }
   #divi{
-    bottom: 100px;
+    bottom: 230px;
     width: 1600px;
   }
 }
@@ -1785,6 +1807,11 @@ top: 700px;
   }
   .home-wrapper{
     height: 550px;
+  }
+}
+@media only screen and (width:1980px), (height:1080px){
+  #divi{
+    bottom: 390px;
   }
 }
 
