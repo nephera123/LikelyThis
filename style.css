@@ -12,121 +12,6 @@ body{
 	padding:0;
 	box-sizing: border-box;
 }
-.frmtx{
-  font-size: 35px;
-}
-.header-hr {
-  display: inline-block;
-  margin-top: 0.5em;
-  margin-bottom: 0.3em;
-  width: 30%;
-}
-
-.scrolling-images {
-  width: 100%;
-  position: relative;
-  height: 140px;
-  overflow: hidden;
-  box-shadow: inset 0px 63px 41px -78px rgba(0,0,0,0.23), inset 0px -63px 41px -78px rgba(0,0,0,0.23);
-}
-
-.scrolling-images-hr {
-  width: 80%;
-}
-
-.scrolling-images > img {
-  max-height: 150px;
-  position: absolute;
-  max-width: 220px;
-  left: 0;
-  right: 0;
-  top: 50%;
-  margin: auto;
-  opacity: 0;
-}
-
-.scrolling-images > .animated { 
-  animation-name: imscroll;
-  animation-delay: 0s;
-  animation-iteration-count: infinite;
-  animation-direction: forward;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-}
-
-@keyframes imscroll {
-  0% {
-    transform: translate(-500px, -50%);
-    opacity: 0;
-  }
-  20% {
-    opacity: 0.7;
-  }
-  50% {
-    transform: translate(0, -50%);
-    opacity: 1;
-  }
-  70% {
-    opacity: 0.7;
-  }
-  100% {
-    opacity: 0;
-    transform: translate(500px, -50%);
-  }
-}
-
-@media screen and (max-width: 992px) {
-
-  .header-hr {
-    display: none;
-  }
-  
-  
-  .scrolling-images > img {
-    max-height: 90px;
-    position: absolute;
-    max-width: 90px;
-  }
-
-  .scrolling-images {
-    height: 110px;
-  }
-  
-  @keyframes imscroll {
-    0% {
-      transform: translate(-300px, -50%);
-      opacity: 0;
-    }
-    20% {
-      opacity: 0.7;
-    }
-    50% {
-      transform: translate(0, -50%);
-      opacity: 1;
-    }
-    70% {
-      opacity: 0.7;
-    }
-    100% {
-      opacity: 0;
-      transform: translate(300px, -50%);
-    }
-  }
-}
-
-.headers {
-  text-align: center;
-/*   text-transform: uppercase; */
-  font-weight: bold;
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-
-  color: #333333;
-}
-
-
-
-
 .social-1{
   width: 100%;
 }
@@ -185,7 +70,7 @@ ul{
 	background-color: #e91e63;
 	height: 2px;
 	box-sizing: border-box;
-  width: 68px;
+	width: 82px;
 }
 .footer-col ul li:not(:last-child){
 	margin-bottom: 10px;
@@ -193,15 +78,15 @@ ul{
 .footer-col ul li a{
 	font-size: 16px;
 	text-transform: capitalize;
-	color: #808080;
+	color: #ffffff;
 	text-decoration: none;
 	font-weight: 300;
-	color: #424242;
+	color: #bbbbbb;
 	display: block;
 	transition: all 0.3s ease;
 }
 .footer-col ul li a:hover{
-	color: #686868;
+	color: #ffffff;
 	padding-left: 8px;
 }
 
@@ -220,9 +105,6 @@ ul{
 .footer-col .social-links a:hover{
 	color: #24262b;
 
-}
-.enrolll{
-  font-size: 13px;
 }
 
 /*responsive*/
@@ -243,23 +125,22 @@ ul{
 }
 .nli{
   list-style-type: none;
-  margin: 4vw 0;
+  margin: 2vw 0;
   
-  font-size: 40px;
+  font-size: 3vh;
 }
 
 .na{
   text-decoration: none;
   color: black;
   font-family: monospace;
-font-size: 25px;
+
   padding: 2vw;
 }
 
 nav{
   width: 100vw;
   background-color: #D6EFFF;
-  height: 95px;
 }
 
 .nul{
@@ -274,7 +155,7 @@ body{
   margin: 0;
 }
 
-.button{
+button{
   display: none;
 }
 
@@ -283,7 +164,9 @@ body{
 }
 
 @media only screen and (max-width: 500px) {
- 
+  .nul{
+    flex-direction: column;
+  }
   
   .na{
     display: block;
@@ -293,7 +176,7 @@ body{
     margin: 0;
   }
   
-  .button{
+  button{
     display: block;
     
     padding: 2vw;
@@ -444,7 +327,6 @@ input.search-bar:focus {
   text-transform: uppercase;
   font-size: 20px;
   animation: 1s ease-out 0s 1 FadeIn;
-  
 }
 
 .about {
@@ -471,27 +353,11 @@ input.search-bar:focus {
 }
 
 .wonder {
-  display: flex;
+  position: inherit;
   bottom: 30px;
   font-size: 12px;
-  width: 300px;
-  flex-direction: column;
 }
-.wonder1 {
-  display: flex;
-  bottom: 30px;
-  
-  width: 300px;
-  flex-direction: column;
-}
-.contain111{
-  display: flex;
-  display: flex;
-    justify-content: space-between;
-    width: 1200px;
-    align-items: baseline;
-    margin-top: 150px;
-}
+
 #popup {
   width: 300px;
   box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);
@@ -627,25 +493,14 @@ input.onei:focus {
 }
 
 @media only screen and (min-width: 280px) {
-  nav{
-    height: 170px;
-  }
-  .nul{
-    flex-direction: column;
-    align-items: flex-start;
-    
-  }
-  .na{
-    font-size: 15px;
-  }
   .img1 {
     margin-left: -10px;
     width: 80%;
     padding-top: 20px;
   }
   #popup {
-    width: 260px;
-    margin-top: -900px;
+    width: 200px;
+    margin-top: -570px;
     margin-left: 8px;
     align-items: center;
     position: absolute;
@@ -656,11 +511,10 @@ input.onei:focus {
     border-radius: 3px;
     color: var(--font-color);
     font-size: 1em;
-    padding: 10px 40px;
+    padding: 10px 80px;
     margin-left: -5px;
     text-transform: uppercase;
     cursor: pointer;
-    width: 180px;
   }
   .add_form_field {
     background: 0 0 #fff;
@@ -675,32 +529,23 @@ input.onei:focus {
     text-transform: uppercase;
     cursor: pointer;
   }
-  .head {
-    margin-top: -15px;
-}
   .inp {
-    width: 190px;
-    padding: 7px;
+    width: 100%;
+    padding: 5px;
     border-radius: 5px;
     text-transform: uppercase;
-    font-size: 10px;
   }
   .newi {
     text-transform: uppercase;
-    font-size: 10px;
-    width: 190px;
   }
   .onei {
     text-transform: uppercase;
-    font-size: 10px;
-    width: 190px;
   }
   .inpi {
     padding: 10px;
     position: relative;
     right: 8.5px;
   }
-  
   .delete {
     position: relative;
     left: 115px;
@@ -716,68 +561,35 @@ input.onei:focus {
   }
   .search-bar {
     margin: 10px -20px 50px 10px;
-    top: -10px;
-    width: 250px;
+    top: 10px;
+    width: 236.7px;
     font-size: 15px;
-    right: 4px;
   }
   .btn {
-    top: -5px;
-    left: -15px;
+    top: 15px;
+    left: -20px;
   }
-  .contain111 {
-  
-    width: 100px;
-  
-    flex-direction: column;
-}
-.wonder1 {
-padding: 20px;
-  font-size: 12px;
-  width: 270px;
- 
-}
-.wonder {
-  display: flex;
-  bottom: 30px;
-  font-size: 12px;
-  width: 270px;
-  flex-direction: column;
-}
-.headers {
-  text-align: center;
-  /* text-transform: uppercase; */
-  font-weight: bold;
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  
-  color: #333333;
-}
   .autocomplete-items {
-    top: 40px;
-    left: 13px;
+    top: 65px;
+    left: 20px;
     width: 236.7px;
   }
   .footer {
     margin: 80px 0px 10px 0px;
     font-size: 11px;
   }
-  .foote {
-    font-size: 13px;
-   
+  .foot {
+    font-size: 14px;
     bottom: 10px;
   }
-  .footee{
-    padding: 1rem;
-  }
   #divi {
-    bottom: -150px;
+    bottom: 170px;
   }
 }
 
-@media (width: 320px),  (height:568px) {
+@media only screen and (min-width: 320px) {
   #popup {
-    margin-top: -950px;
+    margin-top: -550px;
     margin-left: 30px;
   }
   .main-text h1 {
@@ -787,8 +599,8 @@ padding: 20px;
     font-size: 20px;
   }
   .autocomplete-items {
-    top: 40px;
-    left: 8px;
+    top: 65px;
+    left: 35px;
     width: 250px;
   }
   .foot{
@@ -796,39 +608,21 @@ padding: 20px;
     font-size: 13px;
   }
   #divi{
-    bottom: -230px;
-    width: 320px;
+    bottom: 20px;
   }
   .wonder{
-    font-size: 12px;
-  }
-  .wonder1{
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 
 @media only screen and (min-width: 360px) {
   #popup {
     margin-left: 23px;
-    width: 320px;
+    width: 250px;
   }
   .newi {
-    width: 220px;
-    left: 6px;
-    padding: 7px;
+    width: 230px;
   }
-  .onei {
-    text-transform: uppercase;
-    font-size: 10px;
-    width: 220px;
-    left: 6px;
-    padding: 7px;
-  }
-  .inp {
-  width: 220px;
-  left: 6px;
-  }
-
   .delete {
     left: 163px;
   }
@@ -844,24 +638,15 @@ padding: 20px;
     font-size: 12px;
     
   }
-  .form-btn {
-    
-    margin-left: -5px;
-    text-transform: uppercase;
-    cursor: pointer;
-    width: 190px;
-    
-  }
   #divi{
-    bottom: -100px;
-    width: 360px;
+    bottom: 10px;
   }
 }
 
 @media only screen and (min-width: 375px) {
  #popup {
-    width: 335px;
-    margin-top: -930px;
+    width: 270px;
+    margin-top: -470px;
     margin-left: 23px;
     align-items: center;
     position: absolute;
@@ -875,17 +660,11 @@ padding: 20px;
   .inp {
     text-transform: uppercase;
     font-size: 10px;
-    width: 250px;
-    
-  }
-  .inpi{
-    left: -1px;
   }
   .newi {
     text-transform: uppercase;
     font-size: 10px;
     width: 250px;
-    left: 6px;
   }
   .delete {
     left: 190px;
@@ -893,42 +672,25 @@ padding: 20px;
   .close {
     margin-left: 260px;
   }
-  .one{
-    left: -1px;
-  }
   .onei {
     text-transform: uppercase;
     font-size: 10px;
-    width: 250px;
-    
   }
   .footer {
     margin: 220px 0px 10px 0px;
   }
- #divi{
-   bottom: -80px;
-   width: 375px;
- }
-}
-@media  (height: 812px) {
-  #divi{
-    bottom: 30px;
-  }
+ 
 }
 
 @media only screen and (min-width: 411px) {
   #popup {
-    width: 360px;
-    margin-top: -990px;
+    width: 300px;
+    margin-top: -500px;
     margin-left: 25px;
   }
-  #divi{
-    bottom: -40px;
-    width: 411px;
-  }
   .autocomplete-items {
-    top: 40px;
-    left: 6px;
+    top: 65px;
+    left: 38px;
     width: 250px;
   }
   .main-text h1 {
@@ -947,7 +709,7 @@ padding: 20px;
     width: 94%;
     position: relative;
     border-radius: 5px;
-    left: 3px;
+    left: 1px;
   }
   .newi {
     width: 100%;
@@ -970,7 +732,7 @@ padding: 20px;
     width: 100%;
     padding: 10px;
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 15px;
     border-radius: 5px;
   }
   .inpi {
@@ -980,7 +742,7 @@ padding: 20px;
     right: 8.5px;
   }
   .delete {
-    left: 165px;
+    left: 175px;
     top: -40px;
     font-size: 30px;
   }
@@ -992,11 +754,6 @@ padding: 20px;
     margin: 150px 0px 0px 0px;
   }
 }
-@media  screen and (min-height: 823px) {
-  #divi{
-    bottom: 50px;
-  }
-}
 @media (min-width: 414px){
 .foot{
 bottom: 100px;
@@ -1006,9 +763,9 @@ margin: 180px 0px 10px 0px;
 
 @media only screen and (min-width:428px){
   #popup {
-    width: 390px;
-    margin-top: -990px;
-    margin-left: 20px;
+    width: 270px;
+    margin-top: -570px;
+    margin-left: 50px;
     align-items: center;
     position: absolute;
   }
@@ -1020,10 +777,6 @@ margin: 180px 0px 10px 0px;
   }
   .footer {
     margin: 290px 0px 10px 0px;
-  }
-  #divi{
-    bottom: 140px;
-    width: 428px;
   }
 }
 
@@ -1039,25 +792,29 @@ margin: 180px 0px 10px 0px;
 }
 
 @media only screen and (min-width: 540px) {
-
+  .autocomplete-items {
+    top: 67px;
+    left: 80px;
+    width: 250px;
+  }
   .wonder {
     font-size: 13px;
   }
   .autocomplete-items {
     width: 260px;
     font-size: 25px;
-    left: 5px;
+    left: 45px;
   }
   #popup {
-    margin-top: -1000px;
-    width: 490px;
-    margin-left: 25px;
+    margin-top: -550px;
+    width: 400px;
+    margin-left: 38px;
   }
   .new {
     width: 95%;
     position: relative;
     border-radius: 5px;
-    left: 3px;
+    left: 1px;
   }
   .newi {
     width: 100%;
@@ -1096,7 +853,7 @@ margin: 180px 0px 10px 0px;
     font-size: 30px;
   }
   .close {
-    margin-left: 420px;
+    margin-left: 380px;
   }
   .add_form_field {
     background: 0 0 #fff;
@@ -1104,7 +861,7 @@ margin: 180px 0px 10px 0px;
     border-radius: 3px;
     color: var(--font-color);
     font-size: 1em;
-    padding: 15px 80px;
+    padding: 10px 70px;
     margin: -40px;
     margin-bottom: 20px;
     margin-right: -50px;
@@ -1117,8 +874,7 @@ margin: 180px 0px 10px 0px;
     border-radius: 3px;
     color: var(--font-color);
     font-size: 1em;
-    padding: 10px 120px 10px 120px;
-    width: 290px;
+    padding: 10px 120px;
     margin-left: 5px;
     text-transform: uppercase;
     cursor: pointer;
@@ -1134,9 +890,8 @@ margin: 180px 0px 10px 0px;
     font-size: 20px;
   }
   #divi {
-    bottom: -60px;
+    bottom: 10px;
     font-size: 25px;
-    width: 540px;
   }
   .foot{
     margin: 150px 0px 10px 0px;
@@ -1155,21 +910,18 @@ margin: 180px 0px 10px 0px;
   input#start.inp {
     color: gray;
   }
- 
+  #divi {
+    bottom: 0px;
+  }
   .footer {
     margin: 340px 0px 10px 0px;
   }
-  .contain111 {
-    width: 500px;
-    flex-direction: row;
-}
 }
 
 @media only screen and (min-width: 768px) {
   #popup {
-    width: 500px;
-    margin-left: 140px;
-    margin-top: -900px;
+    width: 400px;
+    margin-left: 155px;
   }
   .form-btn {
     padding: 10px 100px;
@@ -1188,17 +940,6 @@ margin: 180px 0px 10px 0px;
     width: 400px;
     font-size: 25px;
   }
-  .contain111 {
-    width: 680px;
-    flex-direction: row;
-   
-}
-.wonder{
-  font-size: 15px;
-}
-.wonder1{
-  font-size: 15px;
-}
   .btn {
     top: 12px;
     left: -30px;
@@ -1206,13 +947,11 @@ margin: 180px 0px 10px 0px;
   .autocomplete-items {
     width: 400px;
     font-size: 25px;
-    left: 135px;
-    top: 65px;
+    left: 20px;
   }
   #divi {
-    font-size: 25px;
-    left: 10px;
-    bottom: 280px;
+    font-size: 20px;
+    left: 120px;
   }
   .main-text h1 {
     font-size: 40px;
@@ -1227,23 +966,9 @@ margin: 180px 0px 10px 0px;
   .foot{
     margin:190px 0px 10px 0px;
   }
-  .nul {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-  nav {
-    height: 80px;
-  }
-  .na{
-    font-size: 20px;
-    
-  }
-  #divi{
-    width: 750px;
-  }
 }
 
-@media (width: 1024px) {
+@media only screen and (min-width: 1024px) {
   .img1 {
     margin-right: 30px;
     width: 70%;
@@ -1292,13 +1017,12 @@ margin: 180px 0px 10px 0px;
   .autocomplete-items {
     width: 700px;
     font-size: 45px;
-    top: 60px;
+    top: 90px;
     left: 20px;
   }
   #divi {
-    bottom: 30px;
+    bottom: -20px;
     font-size: 45px;
-    width: 1024px;
   }
   .footer {
     margin: 360px 0px 10px 0px;
@@ -1311,51 +1035,49 @@ margin: 180px 0px 10px 0px;
   }
   #popup {
     padding: 7rem;
-    margin-top: -1200px;
+    margin-top: -850px;
     transition: 0.5s;
-    width: 800px;
+    width: 600px;
     margin-left: 110px;
   }
   .new {
     position: relative;
     border-radius: 5px;
     right: 25px;
-    font-size: 15px;
   }
   .newi {
-    width: 101%;
+    width: 584px;
     padding: 25px;
     position: relative;
     border-radius: 5px;
-    font-size: 20px;
-    left: 7px;
+    font-size: 35px;
+    left: -20px;
   }
   .one {
     position: relative;
     padding: 10px;
     margin-bottom: 20px;
-    right: 20px;
+    right: 25px;
   }
   .onei {
     width: 100%;
     padding: 25px;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 35px;
   }
   .delete {
     position: relative;
-    left: 315px;
+    left: 365px;
     top: -75px;
     color: #000;
     cursor: pointer;
     font-size: 45px;
   }
-
   .inp {
     width: 100%;
     padding: 25px;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 30px;
     color: gray;
     border-radius: 5px;
   }
@@ -1365,14 +1087,6 @@ margin: 180px 0px 10px 0px;
     text-transform: uppercase;
     right: 25px;
   }
-  .foote {
-    font-size: 20px;
-    bottom: 10px;
-    padding-bottom: 50px;
-}
-  label{
-    font-size: 20px;
-  }
   .close {
     margin-left: 600px;
     font-size: 45px;
@@ -1381,7 +1095,7 @@ margin: 180px 0px 10px 0px;
     font-size: 35px;
   }
   .add_form_field {
-    padding: 10px 120px;
+    padding: 10px 200px;
     margin: -40px;
     margin-bottom: 20px;
     margin-right: -43px;
@@ -1393,11 +1107,10 @@ margin: 180px 0px 10px 0px;
     border-radius: 3px;
     color: var(--font-color);
     font-size: 25px;
-    padding: 20px 120px;
+    padding: 20px 280px;
     margin-left: -15px;
     text-transform: uppercase;
     cursor: pointer;
-    width: 500px;
   }
   .about {
     text-align: right;
@@ -1417,32 +1130,13 @@ margin: 180px 0px 10px 0px;
   }
   .wonder {
     font-size: 20px;
-    width: 400px;
-  }
-  .contain111{
-    margin-top: 190px;
-    width: 750px;
-  }
-  .wonder1{
-    font-size: 20px;
-    width: 340px;
   }
   .foot{
     margin: 500px 0px 10px 0px;
     font-size: 30px;
   }
+}
 
-}
-@media  (width: 1024px),   (height: 600px) {
-  #divi{
-    bottom: -440px;
-  }
-}
-@media  screen and (min-height: 1366px){
-#divi{
-  bottom: 300px;
-}
-}
 @media only screen and (min-width: 1240px) {
   .img1 {
     margin-right: 30px;
@@ -1452,7 +1146,6 @@ margin: 180px 0px 10px 0px;
   .wonder {
     position: inherit;
     bottom: 30px;
-    width: 500px;
   }
   .main-text h2 {
     padding: 20px 10px;
@@ -1499,8 +1192,7 @@ margin: 180px 0px 10px 0px;
     width: 700px;
     font-size: 45px;
     margin-bottom: 10px;
-    top: 63px;
-    left: 245px;
+    top: 93px;
   }
   #divi {
     bottom: -300px;
@@ -1535,7 +1227,7 @@ margin: 180px 0px 10px 0px;
     position: relative;
     transition: 0.5s;
     visibility: hidden;
-    width: 780px;
+    width: 600px;
     margin-left: 270px;
   }
   .new {
@@ -1564,13 +1256,13 @@ margin: 180px 0px 10px 0px;
     font-size: 20px;
   }
   .inp::placeholder {
-    font-size: 12px;
+    font-size: 20px;
   }
   .onei::placeholder {
-    font-size: 12px;
+    font-size: 20px;
   }
   .newi::placeholder {
-    font-size: 12px;
+    font-size: 20px;
   }
   .inp {
     width: 100%;
@@ -1598,7 +1290,7 @@ margin: 180px 0px 10px 0px;
     padding: 20px 220px;
     margin: -40px;
     margin-bottom: 20px;
-    margin-left: -50px;
+    margin-left: -30px;
     text-transform: uppercase;
     cursor: pointer;
   }
@@ -1609,7 +1301,7 @@ margin: 180px 0px 10px 0px;
     color: var(--font-color);
     font-size: 1em;
     padding: 20px 270px;
-    margin-left: -5px;
+    margin-left: 5px;
     text-transform: uppercase;
     cursor: pointer;
   }
@@ -1635,41 +1327,12 @@ margin: 180px 0px 10px 0px;
   .footer {
     margin: 40px 0px 10px 0px;
   }
-  .autocomplete-items {
-    width: 700px;
-    font-size: 45px;
-    margin-bottom: 10px;
-    top: 63px;
-    left: 9px;
-  }
-  #divi {
-    bottom: 60px;
-    font-size: 30px;
-    left: 0px;
-    width: 1280px;
-
-  }
-  .contain111{
-    margin-top: 290px;
-  }
-  .home-wrapper{
-    height: 600px;
-  }
-  .new{
-    left: -1px;
-  }
-  .add_form_field{
-    padding: 20px 120px;
-  }
-  .form-btn{
-    padding: 20px 120px;
-  }
 }
 
 @media only screen and (min-width:1366px) {
   #popup {
     margin-left: 300px;
-    margin-top: -920px;
+    margin-top: -520px;
   }
   .footer {
     margin: 10px 0px 10px 0px;
@@ -1683,20 +1346,6 @@ margin: 180px 0px 10px 0px;
   #popup {
     margin-left: 335px;
   }
-  #divi{
-  left:390px;
-  width: 600px;
-  bottom: 40px;
-  }
-
-  .home-wrapper{
-    height: 850px;
-  }
-  .contain111{
-    margin-top: 140px;
-    width: 1000px;
-  }
-  
 }
 
 @media only screen and (min-width: 1536px) {
@@ -1730,12 +1379,11 @@ margin: 180px 0px 10px 0px;
   }
 }
 
-@media only screen and (min-width:1920px) {
+@media only screen and (min-width:1900px) {
   #popup {
     margin-left: 580px;
     
   }
-  
   .footer {
     margin: 0px;
    bottom: 10px;
@@ -1746,14 +1394,7 @@ top: 700px;
   
   }
   #divi{
-   
-    bottom: 200px;
-    left: 510px;
-  
-    width: 900px;
-  }
-  .home-wrapper{
-    height: 550px;
+    bottom: 100px;
   }
 }
 
