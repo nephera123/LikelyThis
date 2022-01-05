@@ -1792,9 +1792,10 @@ margin: 180px 0px 10px 0px;
 @media only screen and (min-width:1920px) {
   #popup {
     margin-left: 580px;
+    margin-top: -500px;
     
   }
-  
+
   .footer {
     margin: 0px;
    bottom: 10px;
@@ -1806,7 +1807,7 @@ top: 700px;
   }
   #divi{
    
-    bottom: 200px;
+    bottom: 3500px;
     left: 510px;
   
     width: 900px;
@@ -1814,6 +1815,10 @@ top: 700px;
   .home-wrapper{
     height: 550px;
   }
+	.search-bar{
+		height: 55px;
+		padding-top: 0px;
+		padding-bottom: 0px;
 }
 @media only screen and (width:1980px), (height:1080px){
   #divi{
