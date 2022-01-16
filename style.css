@@ -25,32 +25,43 @@ body{
 .scrolling-images {
   width: 100%;
   position: relative;
-  height: 140px;
+  height: 180px;
   overflow: hidden;
   box-shadow: inset 0px 63px 41px -78px rgba(0,0,0,0.23), inset 0px -63px 41px -78px rgba(0,0,0,0.23);
 }
 
 .scrolling-images-hr {
-  width: 80%;
+  width: 100%;
 }
 
-.scrolling-images > img {
-  max-height: 150px;
+.scrolling-images > #img {
+  max-height: 100px;
   position: absolute;
-  max-width: 220px;
+  max-width: 190px;
+  left: 0;
+  right: 0;
+  top: 50%;
+margin: auto;
+  opacity: 0;
+}
+
+
+.scrolling-images > img {
+  max-height: 100px;
+  position: absolute;
+  max-width: 190px;
   left: 0;
   right: 0;
   top: 50%;
   margin: auto;
   opacity: 0;
 }
-
 .scrolling-images > .animated { 
   animation-name: imscroll;
-  animation-delay: 0s;
+  animation-delay: 6s;
   animation-iteration-count: infinite;
   animation-direction: forward;
-  animation-duration: 3s;
+  animation-duration: 6s;
   animation-timing-function: linear;
 }
 
